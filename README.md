@@ -186,11 +186,13 @@ The results describe a single demonstration repository and should not be general
 If you use this code or benchmark, please cite the paper:
 
 ```bibtex
-@inproceedings{<key>,
-  title     = {Retrieval Strategies for Generative AI-Assisted Code Comprehension},
-  author    = {<Author One> and <Author Two> and <Author Three>},
-  booktitle = {<Conference Name>},
-  year      = {2026}
+@inproceedings{diazvillagomez2026retrieval,
+  title     = {Retrieval Strategies for Generative {AI}-Assisted Code Comprehension},
+  author    = {D{\'i}az-Villag{\'o}mez, Alejandro and Saucedo-Arriola, Emiliano and Barbosa-Santill{\'a}n, Liliana Ibeth},
+  booktitle = {Proceedings of the 2026 International Conference on Humanoid Robotics, Innovation and Leadership (HRFEST)},
+  address   = {Callao, Peru},
+  year      = {2026},
+  note      = {Accepted, to appear}
 }
 ```
 
