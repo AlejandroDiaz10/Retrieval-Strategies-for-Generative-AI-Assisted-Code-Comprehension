@@ -1,0 +1,9 @@
+config,"ROC-AUC relevance (per query, mean)","ROC-AUC relevance (pooled, z within query)",median z relevant,median z irrelevant,overlap rel/irrel (60 bins)
+MiniLM-L6,0.946,0.942,2.33,-0.16,0.241
+MPNet,0.964,0.95,2.45,-0.2,0.189
+Paraphrase-L3,0.884,0.859,1.68,-0.09,0.435
+UniXcoder,0.931,0.924,2.06,-0.17,0.262
+JinaCode,0.978,0.963,2.84,-0.25,0.143
+Gemini-RETR,0.976,0.961,2.75,-0.24,0.136
+Gemini-CODE,0.978,0.969,2.73,-0.22,0.146
+BM25,0.943,0.941,2.69,-0.4,0.25

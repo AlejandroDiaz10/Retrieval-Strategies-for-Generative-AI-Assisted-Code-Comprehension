@@ -1,0 +1,1600 @@
+{
+ "taxonomy": {
+  "T1_location": "Location - the query names the sought artifact (class or service). Lexical retrieval is expected to be competitive.",
+  "T2_behavior": "Behavior - the query describes a flow or a piece of logic without naming classes. Dense retrieval is expected to be necessary.",
+  "T3_crosscutting": "Cross-cutting - a concern that spans several microservices (error handling, security, inter-service communication).",
+  "T4_tests": "Tests - the query looks for the unit tests that cover a behavior."
+ },
+ "corpus_orig_indices": [
+  1,
+  10,
+  16,
+  18,
+  20,
+  23,
+  24,
+  28,
+  29,
+  33,
+  34,
+  35,
+  36,
+  37,
+  44,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  62,
+  63,
+  66,
+  67,
+  70,
+  71,
+  74,
+  75,
+  76,
+  79,
+  80,
+  82,
+  89,
+  95,
+  97,
+  99,
+  100,
+  101,
+  104,
+  110,
+  112,
+  114,
+  115,
+  116,
+  117,
+  118,
+  120,
+  125,
+  131,
+  132,
+  144,
+  145,
+  146,
+  147,
+  148,
+  149,
+  150,
+  151,
+  152,
+  153,
+  154,
+  155,
+  156,
+  166,
+  169,
+  170,
+  171,
+  172,
+  174,
+  175,
+  176,
+  177,
+  178,
+  179,
+  180,
+  185,
+  186,
+  187,
+  188,
+  190,
+  191,
+  192,
+  193,
+  194,
+  196,
+  197,
+  198,
+  199
+ ],
+ "corpus": [
+  {
+   "pos": 0,
+   "orig": 1,
+   "name": "InternetBankingServiceRegistryApplicationTests",
+   "service": "internet-banking-service-registry",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 1,
+   "orig": 10,
+   "name": "InternetBankingUtilityPaymentServiceApplicationTests",
+   "service": "internet-banking-utility-payment-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 2,
+   "orig": 16,
+   "name": "CustomFeignClientConfiguration",
+   "service": "internet-banking-utility-payment-service",
+   "chunk_type": "class",
+   "spring_type": "config"
+  },
+  {
+   "pos": 3,
+   "orig": 18,
+   "name": "AuditConfig",
+   "service": "internet-banking-utility-payment-service",
+   "chunk_type": "class",
+   "spring_type": "config"
+  },
+  {
+   "pos": 4,
+   "orig": 20,
+   "name": "AppAuthUserFilter",
+   "service": "internet-banking-utility-payment-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 5,
+   "orig": 23,
+   "name": "UtilityPaymentController",
+   "service": "internet-banking-utility-payment-service",
+   "chunk_type": "class",
+   "spring_type": "controller"
+  },
+  {
+   "pos": 6,
+   "orig": 24,
+   "name": "TransactionStatus",
+   "service": "internet-banking-utility-payment-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 7,
+   "orig": 28,
+   "name": "UtilityPaymentMapper",
+   "service": "internet-banking-utility-payment-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 8,
+   "orig": 29,
+   "name": "BaseMapper",
+   "service": "internet-banking-utility-payment-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 9,
+   "orig": 33,
+   "name": "UtilityPaymentService",
+   "service": "internet-banking-utility-payment-service",
+   "chunk_type": "class",
+   "spring_type": "service"
+  },
+  {
+   "pos": 10,
+   "orig": 34,
+   "name": "BankingCoreRestClient",
+   "service": "internet-banking-utility-payment-service",
+   "chunk_type": "interface",
+   "spring_type": ""
+  },
+  {
+   "pos": 11,
+   "orig": 35,
+   "name": "GlobalExceptionHandler",
+   "service": "internet-banking-utility-payment-service",
+   "chunk_type": "class",
+   "spring_type": "controller_advice"
+  },
+  {
+   "pos": 12,
+   "orig": 36,
+   "name": "SimpleBankingGlobalException",
+   "service": "internet-banking-utility-payment-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 13,
+   "orig": 37,
+   "name": "ErrorResponse",
+   "service": "internet-banking-utility-payment-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 14,
+   "orig": 44,
+   "name": "InternetBankingUserServiceApplicationTests",
+   "service": "internet-banking-user-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 15,
+   "orig": 50,
+   "name": "CustomFeignClientConfiguration",
+   "service": "internet-banking-user-service",
+   "chunk_type": "class",
+   "spring_type": "config"
+  },
+  {
+   "pos": 16,
+   "orig": 51,
+   "name": "CustomFeignErrorDecoder",
+   "service": "internet-banking-user-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 17,
+   "orig": 52,
+   "name": "AuditorAwareConfig",
+   "service": "internet-banking-user-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 18,
+   "orig": 53,
+   "name": "AuditConfig",
+   "service": "internet-banking-user-service",
+   "chunk_type": "class",
+   "spring_type": "config"
+  },
+  {
+   "pos": 19,
+   "orig": 54,
+   "name": "ApiRequestContextHolder",
+   "service": "internet-banking-user-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 20,
+   "orig": 55,
+   "name": "AppAuthUserFilter",
+   "service": "internet-banking-user-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 21,
+   "orig": 56,
+   "name": "ApiRequestContext",
+   "service": "internet-banking-user-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 22,
+   "orig": 57,
+   "name": "KeycloakManager",
+   "service": "internet-banking-user-service",
+   "chunk_type": "class",
+   "spring_type": "component"
+  },
+  {
+   "pos": 23,
+   "orig": 58,
+   "name": "KeycloakProperties",
+   "service": "internet-banking-user-service",
+   "chunk_type": "class",
+   "spring_type": "component"
+  },
+  {
+   "pos": 24,
+   "orig": 59,
+   "name": "UserController",
+   "service": "internet-banking-user-service",
+   "chunk_type": "class",
+   "spring_type": "controller"
+  },
+  {
+   "pos": 25,
+   "orig": 60,
+   "name": "Status",
+   "service": "internet-banking-user-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 26,
+   "orig": 62,
+   "name": "UserUpdateRequest",
+   "service": "internet-banking-user-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 27,
+   "orig": 63,
+   "name": "AuditAware",
+   "service": "internet-banking-user-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 28,
+   "orig": 66,
+   "name": "BaseMapper",
+   "service": "internet-banking-user-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 29,
+   "orig": 67,
+   "name": "UserMapper",
+   "service": "internet-banking-user-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 30,
+   "orig": 70,
+   "name": "KeycloakUserService",
+   "service": "internet-banking-user-service",
+   "chunk_type": "class",
+   "spring_type": "service"
+  },
+  {
+   "pos": 31,
+   "orig": 71,
+   "name": "UserService",
+   "service": "internet-banking-user-service",
+   "chunk_type": "method",
+   "spring_type": "service"
+  },
+  {
+   "pos": 32,
+   "orig": 74,
+   "name": "UserService",
+   "service": "internet-banking-user-service",
+   "chunk_type": "method",
+   "spring_type": "service"
+  },
+  {
+   "pos": 33,
+   "orig": 75,
+   "name": "BankingCoreRestClient",
+   "service": "internet-banking-user-service",
+   "chunk_type": "interface",
+   "spring_type": ""
+  },
+  {
+   "pos": 34,
+   "orig": 76,
+   "name": "GlobalErrorCode",
+   "service": "internet-banking-user-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 35,
+   "orig": 79,
+   "name": "GlobalExceptionHandler",
+   "service": "internet-banking-user-service",
+   "chunk_type": "class",
+   "spring_type": "controller_advice"
+  },
+  {
+   "pos": 36,
+   "orig": 80,
+   "name": "SimpleBankingGlobalException",
+   "service": "internet-banking-user-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 37,
+   "orig": 82,
+   "name": "ErrorResponse",
+   "service": "internet-banking-user-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 38,
+   "orig": 89,
+   "name": "InternetBankingFundTransferServiceApplicationTests",
+   "service": "internet-banking-fund-transfer-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 39,
+   "orig": 95,
+   "name": "CustomFeignClientConfiguration",
+   "service": "internet-banking-fund-transfer-service",
+   "chunk_type": "class",
+   "spring_type": "config"
+  },
+  {
+   "pos": 40,
+   "orig": 97,
+   "name": "AuditConfig",
+   "service": "internet-banking-fund-transfer-service",
+   "chunk_type": "class",
+   "spring_type": "config"
+  },
+  {
+   "pos": 41,
+   "orig": 99,
+   "name": "AppAuthUserFilter",
+   "service": "internet-banking-fund-transfer-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 42,
+   "orig": 100,
+   "name": "ApiRequestContext",
+   "service": "internet-banking-fund-transfer-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 43,
+   "orig": 101,
+   "name": "FundTransferController",
+   "service": "internet-banking-fund-transfer-service",
+   "chunk_type": "class",
+   "spring_type": "controller"
+  },
+  {
+   "pos": 44,
+   "orig": 104,
+   "name": "AuditAware",
+   "service": "internet-banking-fund-transfer-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 45,
+   "orig": 110,
+   "name": "FundTransferRepository",
+   "service": "internet-banking-fund-transfer-service",
+   "chunk_type": "interface",
+   "spring_type": ""
+  },
+  {
+   "pos": 46,
+   "orig": 112,
+   "name": "BaseMapper",
+   "service": "internet-banking-fund-transfer-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 47,
+   "orig": 114,
+   "name": "FundTransferService",
+   "service": "internet-banking-fund-transfer-service",
+   "chunk_type": "class",
+   "spring_type": "service"
+  },
+  {
+   "pos": 48,
+   "orig": 115,
+   "name": "BankingCoreFeignClient",
+   "service": "internet-banking-fund-transfer-service",
+   "chunk_type": "interface",
+   "spring_type": ""
+  },
+  {
+   "pos": 49,
+   "orig": 116,
+   "name": "GlobalExceptionHandler",
+   "service": "internet-banking-fund-transfer-service",
+   "chunk_type": "class",
+   "spring_type": "controller_advice"
+  },
+  {
+   "pos": 50,
+   "orig": 117,
+   "name": "SimpleBankingGlobalException",
+   "service": "internet-banking-fund-transfer-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 51,
+   "orig": 118,
+   "name": "ErrorResponse",
+   "service": "internet-banking-fund-transfer-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 52,
+   "orig": 120,
+   "name": "InternetBankingConfigServerApplicationTests",
+   "service": "internet-banking-config-server",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 53,
+   "orig": 125,
+   "name": "InternetBankingApiGatewayApplicationTests",
+   "service": "internet-banking-api-gateway",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 54,
+   "orig": 131,
+   "name": "GatewayConfiguration",
+   "service": "internet-banking-api-gateway",
+   "chunk_type": "class",
+   "spring_type": "config"
+  },
+  {
+   "pos": 55,
+   "orig": 132,
+   "name": "SecurityConfiguration",
+   "service": "internet-banking-api-gateway",
+   "chunk_type": "class",
+   "spring_type": "config"
+  },
+  {
+   "pos": 56,
+   "orig": 144,
+   "name": "CoreBankingServiceApplicationTests",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 57,
+   "orig": 145,
+   "name": "AccountServiceTest",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 58,
+   "orig": 146,
+   "name": "TransactionServiceTest",
+   "service": "core-banking-service",
+   "chunk_type": "method",
+   "spring_type": ""
+  },
+  {
+   "pos": 59,
+   "orig": 147,
+   "name": "TransactionServiceTest",
+   "service": "core-banking-service",
+   "chunk_type": "method",
+   "spring_type": ""
+  },
+  {
+   "pos": 60,
+   "orig": 148,
+   "name": "TransactionServiceTest",
+   "service": "core-banking-service",
+   "chunk_type": "method",
+   "spring_type": ""
+  },
+  {
+   "pos": 61,
+   "orig": 149,
+   "name": "TransactionServiceTest",
+   "service": "core-banking-service",
+   "chunk_type": "method",
+   "spring_type": ""
+  },
+  {
+   "pos": 62,
+   "orig": 150,
+   "name": "TransactionServiceTest",
+   "service": "core-banking-service",
+   "chunk_type": "method",
+   "spring_type": ""
+  },
+  {
+   "pos": 63,
+   "orig": 151,
+   "name": "TransactionServiceTest",
+   "service": "core-banking-service",
+   "chunk_type": "method",
+   "spring_type": ""
+  },
+  {
+   "pos": 64,
+   "orig": 152,
+   "name": "TransactionServiceTest",
+   "service": "core-banking-service",
+   "chunk_type": "method",
+   "spring_type": ""
+  },
+  {
+   "pos": 65,
+   "orig": 153,
+   "name": "TransactionServiceTest",
+   "service": "core-banking-service",
+   "chunk_type": "method",
+   "spring_type": ""
+  },
+  {
+   "pos": 66,
+   "orig": 154,
+   "name": "TransactionServiceTest",
+   "service": "core-banking-service",
+   "chunk_type": "method",
+   "spring_type": ""
+  },
+  {
+   "pos": 67,
+   "orig": 155,
+   "name": "TransactionServiceTest",
+   "service": "core-banking-service",
+   "chunk_type": "method",
+   "spring_type": ""
+  },
+  {
+   "pos": 68,
+   "orig": 156,
+   "name": "UserServiceTest",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 69,
+   "orig": 166,
+   "name": "AccountController",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": "controller"
+  },
+  {
+   "pos": 70,
+   "orig": 169,
+   "name": "AccountStatus",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 71,
+   "orig": 170,
+   "name": "AccountType",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 72,
+   "orig": 171,
+   "name": "TransactionType",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 73,
+   "orig": 172,
+   "name": "UtilityAccount",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 74,
+   "orig": 174,
+   "name": "BankAccount",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 75,
+   "orig": 175,
+   "name": "Transaction",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 76,
+   "orig": 176,
+   "name": "UtilityPaymentResponse",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 77,
+   "orig": 177,
+   "name": "FundTransferResponse",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 78,
+   "orig": 178,
+   "name": "UtilityPaymentRequest",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 79,
+   "orig": 179,
+   "name": "FundTransferRequest",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 80,
+   "orig": 180,
+   "name": "BankAccountEntity",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": "entity"
+  },
+  {
+   "pos": 81,
+   "orig": 185,
+   "name": "BankAccountMapper",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 82,
+   "orig": 186,
+   "name": "BaseMapper",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 83,
+   "orig": 187,
+   "name": "UserMapper",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 84,
+   "orig": 188,
+   "name": "AccountService",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": "service"
+  },
+  {
+   "pos": 85,
+   "orig": 190,
+   "name": "TransactionService",
+   "service": "core-banking-service",
+   "chunk_type": "method",
+   "spring_type": "service"
+  },
+  {
+   "pos": 86,
+   "orig": 191,
+   "name": "TransactionService",
+   "service": "core-banking-service",
+   "chunk_type": "method",
+   "spring_type": "service"
+  },
+  {
+   "pos": 87,
+   "orig": 192,
+   "name": "TransactionService",
+   "service": "core-banking-service",
+   "chunk_type": "method",
+   "spring_type": "service"
+  },
+  {
+   "pos": 88,
+   "orig": 193,
+   "name": "TransactionService",
+   "service": "core-banking-service",
+   "chunk_type": "method",
+   "spring_type": "service"
+  },
+  {
+   "pos": 89,
+   "orig": 194,
+   "name": "GlobalErrorCode",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 90,
+   "orig": 196,
+   "name": "GlobalExceptionHandler",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": "controller_advice"
+  },
+  {
+   "pos": 91,
+   "orig": 197,
+   "name": "InsufficientFundsException",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 92,
+   "orig": 198,
+   "name": "SimpleBankingGlobalException",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  },
+  {
+   "pos": 93,
+   "orig": 199,
+   "name": "ErrorResponse",
+   "service": "core-banking-service",
+   "chunk_type": "class",
+   "spring_type": ""
+  }
+ ],
+ "queries": [
+  {
+   "id": "Q01",
+   "category": "T1_location",
+   "text": "Which class configures the routing rules of the API Gateway?",
+   "gt_orig": [
+    131
+   ],
+   "gt_pos": [
+    54
+   ],
+   "gt_names": [
+    "GatewayConfiguration"
+   ]
+  },
+  {
+   "id": "Q02",
+   "category": "T1_location",
+   "text": "Where is JWT security configured for the API Gateway?",
+   "gt_orig": [
+    132
+   ],
+   "gt_pos": [
+    55
+   ],
+   "gt_names": [
+    "SecurityConfiguration"
+   ]
+  },
+  {
+   "id": "Q03",
+   "category": "T1_location",
+   "text": "What class performs Keycloak user operations in the user service?",
+   "gt_orig": [
+    70,
+    57
+   ],
+   "gt_pos": [
+    30,
+    22
+   ],
+   "gt_names": [
+    "KeycloakUserService",
+    "KeycloakManager"
+   ]
+  },
+  {
+   "id": "Q04",
+   "category": "T1_location",
+   "text": "Which repository persists fund transfer records?",
+   "gt_orig": [
+    110
+   ],
+   "gt_pos": [
+    45
+   ],
+   "gt_names": [
+    "FundTransferRepository"
+   ]
+  },
+  {
+   "id": "Q05",
+   "category": "T1_location",
+   "text": "What JPA entity maps bank accounts to the database in core-banking?",
+   "gt_orig": [
+    180
+   ],
+   "gt_pos": [
+    80
+   ],
+   "gt_names": [
+    "BankAccountEntity"
+   ]
+  },
+  {
+   "id": "Q06",
+   "category": "T1_location",
+   "text": "Which controller exposes the utility payment REST endpoints?",
+   "gt_orig": [
+    23
+   ],
+   "gt_pos": [
+    5
+   ],
+   "gt_names": [
+    "UtilityPaymentController"
+   ]
+  },
+  {
+   "id": "Q07",
+   "category": "T1_location",
+   "text": "What class decodes Feign client errors in the user service?",
+   "gt_orig": [
+    51
+   ],
+   "gt_pos": [
+    16
+   ],
+   "gt_names": [
+    "CustomFeignErrorDecoder"
+   ]
+  },
+  {
+   "id": "Q08",
+   "category": "T1_location",
+   "text": "Where is the InsufficientFundsException class defined?",
+   "gt_orig": [
+    197,
+    117,
+    36,
+    80
+   ],
+   "gt_pos": [
+    91,
+    50,
+    12,
+    36
+   ],
+   "gt_names": [
+    "InsufficientFundsException",
+    "SimpleBankingGlobalException",
+    "SimpleBankingGlobalException",
+    "SimpleBankingGlobalException"
+   ]
+  },
+  {
+   "id": "Q09",
+   "category": "T1_location",
+   "text": "Which class maps a UserEntity to the User domain model in core-banking?",
+   "gt_orig": [
+    187
+   ],
+   "gt_pos": [
+    83
+   ],
+   "gt_names": [
+    "UserMapper"
+   ]
+  },
+  {
+   "id": "Q10",
+   "category": "T1_location",
+   "text": "What interface is the Feign client toward core-banking in the fund-transfer service?",
+   "gt_orig": [
+    115
+   ],
+   "gt_pos": [
+    48
+   ],
+   "gt_names": [
+    "BankingCoreFeignClient"
+   ]
+  },
+  {
+   "id": "Q11",
+   "category": "T2_behavior",
+   "text": "How is a fund transfer between two bank accounts executed end to end?",
+   "gt_orig": [
+    101,
+    114,
+    115,
+    190,
+    192
+   ],
+   "gt_pos": [
+    43,
+    47,
+    48,
+    85,
+    87
+   ],
+   "gt_names": [
+    "FundTransferController",
+    "FundTransferService",
+    "BankingCoreFeignClient",
+    "TransactionService",
+    "TransactionService"
+   ]
+  },
+  {
+   "id": "Q12",
+   "category": "T2_behavior",
+   "text": "How does the system verify that an account has enough balance before debiting it?",
+   "gt_orig": [
+    192,
+    197,
+    190
+   ],
+   "gt_pos": [
+    87,
+    91,
+    85
+   ],
+   "gt_names": [
+    "TransactionService",
+    "InsufficientFundsException",
+    "TransactionService"
+   ]
+  },
+  {
+   "id": "Q13",
+   "category": "T2_behavior",
+   "text": "How does user registration create the account both locally and in Keycloak?",
+   "gt_orig": [
+    71,
+    70,
+    57,
+    59
+   ],
+   "gt_pos": [
+    31,
+    30,
+    22,
+    24
+   ],
+   "gt_names": [
+    "UserService",
+    "KeycloakUserService",
+    "KeycloakManager",
+    "UserController"
+   ]
+  },
+  {
+   "id": "Q14",
+   "category": "T2_behavior",
+   "text": "How is a utility bill payment processed and forwarded to core-banking?",
+   "gt_orig": [
+    23,
+    33,
+    34,
+    191
+   ],
+   "gt_pos": [
+    5,
+    9,
+    10,
+    86
+   ],
+   "gt_names": [
+    "UtilityPaymentController",
+    "UtilityPaymentService",
+    "BankingCoreRestClient",
+    "TransactionService"
+   ]
+  },
+  {
+   "id": "Q15",
+   "category": "T2_behavior",
+   "text": "How is the authenticated user propagated across internal service calls?",
+   "gt_orig": [
+    55,
+    56,
+    54,
+    99
+   ],
+   "gt_pos": [
+    20,
+    21,
+    19,
+    41
+   ],
+   "gt_names": [
+    "AppAuthUserFilter",
+    "ApiRequestContext",
+    "ApiRequestContextHolder",
+    "AppAuthUserFilter"
+   ]
+  },
+  {
+   "id": "Q16",
+   "category": "T2_behavior",
+   "text": "How does an internal fund transfer between two accounts of the same customer work?",
+   "gt_orig": [
+    193,
+    192
+   ],
+   "gt_pos": [
+    88,
+    87
+   ],
+   "gt_names": [
+    "TransactionService",
+    "TransactionService"
+   ]
+  },
+  {
+   "id": "Q17",
+   "category": "T2_behavior",
+   "text": "How does the user service update an existing user's profile?",
+   "gt_orig": [
+    74,
+    62,
+    59
+   ],
+   "gt_pos": [
+    32,
+    26,
+    24
+   ],
+   "gt_names": [
+    "UserService",
+    "UserUpdateRequest",
+    "UserController"
+   ]
+  },
+  {
+   "id": "Q18",
+   "category": "T2_behavior",
+   "text": "How is the 'created by' / 'modified by' audit information captured automatically?",
+   "gt_orig": [
+    63,
+    52,
+    53
+   ],
+   "gt_pos": [
+    27,
+    17,
+    18
+   ],
+   "gt_names": [
+    "AuditAware",
+    "AuditorAwareConfig",
+    "AuditConfig"
+   ]
+  },
+  {
+   "id": "Q19",
+   "category": "T2_behavior",
+   "text": "How does core-banking create a new bank account for a customer?",
+   "gt_orig": [
+    188,
+    166,
+    180
+   ],
+   "gt_pos": [
+    84,
+    69,
+    80
+   ],
+   "gt_names": [
+    "AccountService",
+    "AccountController",
+    "BankAccountEntity"
+   ]
+  },
+  {
+   "id": "Q20",
+   "category": "T3_crosscutting",
+   "text": "How is global exception handling implemented across all microservices?",
+   "gt_orig": [
+    35,
+    79,
+    116,
+    196
+   ],
+   "gt_pos": [
+    11,
+    35,
+    49,
+    90
+   ],
+   "gt_names": [
+    "GlobalExceptionHandler",
+    "GlobalExceptionHandler",
+    "GlobalExceptionHandler",
+    "GlobalExceptionHandler"
+   ]
+  },
+  {
+   "id": "Q21",
+   "category": "T3_crosscutting",
+   "text": "How is the authenticated-user servlet filter implemented in each microservice?",
+   "gt_orig": [
+    55,
+    99,
+    20
+   ],
+   "gt_pos": [
+    20,
+    41,
+    4
+   ],
+   "gt_names": [
+    "AppAuthUserFilter",
+    "AppAuthUserFilter",
+    "AppAuthUserFilter"
+   ]
+  },
+  {
+   "id": "Q22",
+   "category": "T3_crosscutting",
+   "text": "How do the internet-banking services communicate with the core-banking service?",
+   "gt_orig": [
+    34,
+    75,
+    115,
+    50,
+    95,
+    16
+   ],
+   "gt_pos": [
+    10,
+    33,
+    48,
+    15,
+    39,
+    2
+   ],
+   "gt_names": [
+    "BankingCoreRestClient",
+    "BankingCoreRestClient",
+    "BankingCoreFeignClient",
+    "CustomFeignClientConfiguration",
+    "CustomFeignClientConfiguration",
+    "CustomFeignClientConfiguration"
+   ]
+  },
+  {
+   "id": "Q23",
+   "category": "T3_crosscutting",
+   "text": "What common base class do the entity mappers share across services?",
+   "gt_orig": [
+    66,
+    112,
+    29,
+    186
+   ],
+   "gt_pos": [
+    28,
+    46,
+    8,
+    82
+   ],
+   "gt_names": [
+    "BaseMapper",
+    "BaseMapper",
+    "BaseMapper",
+    "BaseMapper"
+   ]
+  },
+  {
+   "id": "Q24",
+   "category": "T3_crosscutting",
+   "text": "How is the SimpleBankingGlobalException hierarchy structured across services?",
+   "gt_orig": [
+    80,
+    117,
+    36,
+    198,
+    76,
+    194
+   ],
+   "gt_pos": [
+    36,
+    50,
+    12,
+    92,
+    34,
+    89
+   ],
+   "gt_names": [
+    "SimpleBankingGlobalException",
+    "SimpleBankingGlobalException",
+    "SimpleBankingGlobalException",
+    "SimpleBankingGlobalException",
+    "GlobalErrorCode",
+    "GlobalErrorCode"
+   ]
+  },
+  {
+   "id": "Q25",
+   "category": "T3_crosscutting",
+   "text": "How is the per-request API context managed in each internet-banking service?",
+   "gt_orig": [
+    56,
+    54,
+    55
+   ],
+   "gt_pos": [
+    21,
+    19,
+    20
+   ],
+   "gt_names": [
+    "ApiRequestContext",
+    "ApiRequestContextHolder",
+    "AppAuthUserFilter"
+   ]
+  },
+  {
+   "id": "Q26",
+   "category": "T3_crosscutting",
+   "text": "How are Feign clients configured across the internet-banking services?",
+   "gt_orig": [
+    50,
+    95,
+    16,
+    51
+   ],
+   "gt_pos": [
+    15,
+    39,
+    2,
+    16
+   ],
+   "gt_names": [
+    "CustomFeignClientConfiguration",
+    "CustomFeignClientConfiguration",
+    "CustomFeignClientConfiguration",
+    "CustomFeignErrorDecoder"
+   ]
+  },
+  {
+   "id": "Q27",
+   "category": "T3_crosscutting",
+   "text": "How is JPA auditing configured consistently across the services?",
+   "gt_orig": [
+    53,
+    97,
+    18,
+    52,
+    63
+   ],
+   "gt_pos": [
+    18,
+    40,
+    3,
+    17,
+    27
+   ],
+   "gt_names": [
+    "AuditConfig",
+    "AuditConfig",
+    "AuditConfig",
+    "AuditorAwareConfig",
+    "AuditAware"
+   ]
+  },
+  {
+   "id": "Q28",
+   "category": "T3_crosscutting",
+   "text": "What error-response payload structure is returned to clients on failure?",
+   "gt_orig": [
+    199,
+    82,
+    37,
+    118
+   ],
+   "gt_pos": [
+    93,
+    37,
+    13,
+    51
+   ],
+   "gt_names": [
+    "ErrorResponse",
+    "ErrorResponse",
+    "ErrorResponse",
+    "ErrorResponse"
+   ]
+  },
+  {
+   "id": "Q29",
+   "category": "T4_tests",
+   "text": "What unit tests cover the fund transfer business logic?",
+   "gt_orig": [
+    147,
+    148,
+    149,
+    153,
+    154,
+    146
+   ],
+   "gt_pos": [
+    59,
+    60,
+    61,
+    65,
+    66,
+    58
+   ],
+   "gt_names": [
+    "TransactionServiceTest",
+    "TransactionServiceTest",
+    "TransactionServiceTest",
+    "TransactionServiceTest",
+    "TransactionServiceTest",
+    "TransactionServiceTest"
+   ]
+  },
+  {
+   "id": "Q30",
+   "category": "T4_tests",
+   "text": "What tests verify behavior when an account is not found during a transfer or payment?",
+   "gt_orig": [
+    149,
+    154,
+    152
+   ],
+   "gt_pos": [
+    61,
+    66,
+    64
+   ],
+   "gt_names": [
+    "TransactionServiceTest",
+    "TransactionServiceTest",
+    "TransactionServiceTest"
+   ]
+  },
+  {
+   "id": "Q31",
+   "category": "T4_tests",
+   "text": "What tests check the insufficient-funds scenario?",
+   "gt_orig": [
+    148,
+    151,
+    155
+   ],
+   "gt_pos": [
+    60,
+    63,
+    67
+   ],
+   "gt_names": [
+    "TransactionServiceTest",
+    "TransactionServiceTest",
+    "TransactionServiceTest"
+   ]
+  },
+  {
+   "id": "Q32",
+   "category": "T4_tests",
+   "text": "What tests cover utility payment processing?",
+   "gt_orig": [
+    150,
+    152,
+    151
+   ],
+   "gt_pos": [
+    62,
+    64,
+    63
+   ],
+   "gt_names": [
+    "TransactionServiceTest",
+    "TransactionServiceTest",
+    "TransactionServiceTest"
+   ]
+  },
+  {
+   "id": "Q33",
+   "category": "T4_tests",
+   "text": "Which test class covers the account service logic?",
+   "gt_orig": [
+    145
+   ],
+   "gt_pos": [
+    57
+   ],
+   "gt_names": [
+    "AccountServiceTest"
+   ]
+  },
+  {
+   "id": "Q34",
+   "category": "T4_tests",
+   "text": "Which test class covers the user service logic?",
+   "gt_orig": [
+    156
+   ],
+   "gt_pos": [
+    68
+   ],
+   "gt_names": [
+    "UserServiceTest"
+   ]
+  },
+  {
+   "id": "Q35",
+   "category": "T4_tests",
+   "text": "What is the fixture/mock setup for the transaction service tests?",
+   "gt_orig": [
+    146
+   ],
+   "gt_pos": [
+    58
+   ],
+   "gt_names": [
+    "TransactionServiceTest"
+   ]
+  },
+  {
+   "id": "Q36",
+   "category": "T4_tests",
+   "text": "What Spring Boot context-load smoke tests exist in the platform?",
+   "gt_orig": [
+    144,
+    125,
+    120,
+    89,
+    44,
+    10,
+    1
+   ],
+   "gt_pos": [
+    56,
+    53,
+    52,
+    38,
+    14,
+    1,
+    0
+   ],
+   "gt_names": [
+    "CoreBankingServiceApplicationTests",
+    "InternetBankingApiGatewayApplicationTests",
+    "InternetBankingConfigServerApplicationTests",
+    "InternetBankingFundTransferServiceApplicationTests",
+    "InternetBankingUserServiceApplicationTests",
+    "InternetBankingUtilityPaymentServiceApplicationTests",
+    "InternetBankingServiceRegistryApplicationTests"
+   ]
+  },
+  {
+   "id": "Q37",
+   "category": "T4_tests",
+   "text": "What tests validate a successful (internal) fund transfer?",
+   "gt_orig": [
+    153,
+    147
+   ],
+   "gt_pos": [
+    65,
+    59
+   ],
+   "gt_names": [
+    "TransactionServiceTest",
+    "TransactionServiceTest"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1552 @@
+{
+  "study_repo": {
+    "url": "https://github.com/JavatoDev-com/internet-banking-concept-microservices",
+    "commit": "efb42d6a6656ec128552ba3f3f93c5ce96f039ff",
+    "commit_date": "2026-07-23",
+    "license": "MIT",
+    "snapshot_date": "2026-09-04",
+    "provenance": "source archive of branch `main`; commit = HEAD at snapshot_date"
+  },
+  "taxonomy": {
+    "T1_location": "Location - the query names the sought artifact (class or service). Lexical retrieval is expected to be competitive.",
+    "T2_behavior": "Behavior - the query describes a flow or a piece of logic without naming classes. Dense retrieval is expected to be necessary.",
+    "T3_crosscutting": "Cross-cutting - a concern that spans several microservices (error handling, security, inter-service communication).",
+    "T4_tests": "Tests - the query looks for the unit tests that cover a behavior."
+  },
+  "corpus": [
+    {
+      "pos": 0,
+      "orig_chunk_index": 1,
+      "component": "InternetBankingServiceRegistryApplicationTests",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-service-registry",
+      "path": "internet-banking-service-registry/src/test/java/com/javatodev/finance/InternetBankingServiceRegistryApplicationTests.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 1,
+      "orig_chunk_index": 10,
+      "component": "InternetBankingUtilityPaymentServiceApplicationTests",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-utility-payment-service",
+      "path": "internet-banking-utility-payment-service/src/test/java/com/javatodev/finance/InternetBankingUtilityPaymentServiceApplicationTests.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 2,
+      "orig_chunk_index": 16,
+      "component": "CustomFeignClientConfiguration",
+      "chunk_type": "class",
+      "component_type": "config",
+      "service": "internet-banking-utility-payment-service",
+      "path": "internet-banking-utility-payment-service/src/main/java/com/javatodev/finance/configuration/CustomFeignClientConfiguration.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 3,
+      "orig_chunk_index": 18,
+      "component": "AuditConfig",
+      "chunk_type": "class",
+      "component_type": "config",
+      "service": "internet-banking-utility-payment-service",
+      "path": "internet-banking-utility-payment-service/src/main/java/com/javatodev/finance/configuration/audit/AuditConfig.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 4,
+      "orig_chunk_index": 20,
+      "component": "AppAuthUserFilter",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-utility-payment-service",
+      "path": "internet-banking-utility-payment-service/src/main/java/com/javatodev/finance/configuration/filter/AppAuthUserFilter.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 5,
+      "orig_chunk_index": 23,
+      "component": "UtilityPaymentController",
+      "chunk_type": "class",
+      "component_type": "controller",
+      "service": "internet-banking-utility-payment-service",
+      "path": "internet-banking-utility-payment-service/src/main/java/com/javatodev/finance/controller/UtilityPaymentController.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 6,
+      "orig_chunk_index": 24,
+      "component": "TransactionStatus",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-utility-payment-service",
+      "path": "internet-banking-utility-payment-service/src/main/java/com/javatodev/finance/model/TransactionStatus.java",
+      "is_distractor": true
+    },
+    {
+      "pos": 7,
+      "orig_chunk_index": 28,
+      "component": "UtilityPaymentMapper",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-utility-payment-service",
+      "path": "internet-banking-utility-payment-service/src/main/java/com/javatodev/finance/model/mapper/UtilityPaymentMapper.java",
+      "is_distractor": true
+    },
+    {
+      "pos": 8,
+      "orig_chunk_index": 29,
+      "component": "BaseMapper",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-utility-payment-service",
+      "path": "internet-banking-utility-payment-service/src/main/java/com/javatodev/finance/model/mapper/BaseMapper.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 9,
+      "orig_chunk_index": 33,
+      "component": "UtilityPaymentService",
+      "chunk_type": "class",
+      "component_type": "service",
+      "service": "internet-banking-utility-payment-service",
+      "path": "internet-banking-utility-payment-service/src/main/java/com/javatodev/finance/service/UtilityPaymentService.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 10,
+      "orig_chunk_index": 34,
+      "component": "BankingCoreRestClient",
+      "chunk_type": "interface",
+      "component_type": "interface",
+      "service": "internet-banking-utility-payment-service",
+      "path": "internet-banking-utility-payment-service/src/main/java/com/javatodev/finance/service/rest/BankingCoreRestClient.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 11,
+      "orig_chunk_index": 35,
+      "component": "GlobalExceptionHandler",
+      "chunk_type": "class",
+      "component_type": "controller_advice",
+      "service": "internet-banking-utility-payment-service",
+      "path": "internet-banking-utility-payment-service/src/main/java/com/javatodev/finance/exception/GlobalExceptionHandler.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 12,
+      "orig_chunk_index": 36,
+      "component": "SimpleBankingGlobalException",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-utility-payment-service",
+      "path": "internet-banking-utility-payment-service/src/main/java/com/javatodev/finance/exception/SimpleBankingGlobalException.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 13,
+      "orig_chunk_index": 37,
+      "component": "ErrorResponse",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-utility-payment-service",
+      "path": "internet-banking-utility-payment-service/src/main/java/com/javatodev/finance/exception/ErrorResponse.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 14,
+      "orig_chunk_index": 44,
+      "component": "InternetBankingUserServiceApplicationTests",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/test/java/com/javatodev/finance/InternetBankingUserServiceApplicationTests.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 15,
+      "orig_chunk_index": 50,
+      "component": "CustomFeignClientConfiguration",
+      "chunk_type": "class",
+      "component_type": "config",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/configuration/feign/CustomFeignClientConfiguration.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 16,
+      "orig_chunk_index": 51,
+      "component": "CustomFeignErrorDecoder",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/configuration/feign/CustomFeignErrorDecoder.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 17,
+      "orig_chunk_index": 52,
+      "component": "AuditorAwareConfig",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/configuration/audit/AuditorAwareConfig.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 18,
+      "orig_chunk_index": 53,
+      "component": "AuditConfig",
+      "chunk_type": "class",
+      "component_type": "config",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/configuration/audit/AuditConfig.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 19,
+      "orig_chunk_index": 54,
+      "component": "ApiRequestContextHolder",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/configuration/filter/ApiRequestContextHolder.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 20,
+      "orig_chunk_index": 55,
+      "component": "AppAuthUserFilter",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/configuration/filter/AppAuthUserFilter.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 21,
+      "orig_chunk_index": 56,
+      "component": "ApiRequestContext",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/configuration/filter/ApiRequestContext.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 22,
+      "orig_chunk_index": 57,
+      "component": "KeycloakManager",
+      "chunk_type": "class",
+      "component_type": "component",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/configuration/keycloak/KeycloakManager.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 23,
+      "orig_chunk_index": 58,
+      "component": "KeycloakProperties",
+      "chunk_type": "class",
+      "component_type": "component",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/configuration/keycloak/KeycloakProperties.java",
+      "is_distractor": true
+    },
+    {
+      "pos": 24,
+      "orig_chunk_index": 59,
+      "component": "UserController",
+      "chunk_type": "class",
+      "component_type": "controller",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/controller/UserController.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 25,
+      "orig_chunk_index": 60,
+      "component": "Status",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/model/dto/Status.java",
+      "is_distractor": true
+    },
+    {
+      "pos": 26,
+      "orig_chunk_index": 62,
+      "component": "UserUpdateRequest",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/model/dto/UserUpdateRequest.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 27,
+      "orig_chunk_index": 63,
+      "component": "AuditAware",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/model/dto/AuditAware.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 28,
+      "orig_chunk_index": 66,
+      "component": "BaseMapper",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/model/mapper/BaseMapper.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 29,
+      "orig_chunk_index": 67,
+      "component": "UserMapper",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/model/mapper/UserMapper.java",
+      "is_distractor": true
+    },
+    {
+      "pos": 30,
+      "orig_chunk_index": 70,
+      "component": "KeycloakUserService",
+      "chunk_type": "class",
+      "component_type": "service",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/service/KeycloakUserService.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 31,
+      "orig_chunk_index": 71,
+      "component": "UserService",
+      "chunk_type": "method",
+      "component_type": "service",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/service/UserService.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 32,
+      "orig_chunk_index": 74,
+      "component": "UserService",
+      "chunk_type": "method",
+      "component_type": "service",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/service/UserService.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 33,
+      "orig_chunk_index": 75,
+      "component": "BankingCoreRestClient",
+      "chunk_type": "interface",
+      "component_type": "interface",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/service/rest/BankingCoreRestClient.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 34,
+      "orig_chunk_index": 76,
+      "component": "GlobalErrorCode",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/exception/GlobalErrorCode.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 35,
+      "orig_chunk_index": 79,
+      "component": "GlobalExceptionHandler",
+      "chunk_type": "class",
+      "component_type": "controller_advice",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/exception/GlobalExceptionHandler.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 36,
+      "orig_chunk_index": 80,
+      "component": "SimpleBankingGlobalException",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/exception/SimpleBankingGlobalException.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 37,
+      "orig_chunk_index": 82,
+      "component": "ErrorResponse",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-user-service",
+      "path": "internet-banking-user-service/src/main/java/com/javatodev/finance/exception/ErrorResponse.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 38,
+      "orig_chunk_index": 89,
+      "component": "InternetBankingFundTransferServiceApplicationTests",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-fund-transfer-service",
+      "path": "internet-banking-fund-transfer-service/src/test/java/com/javatodev/finance/InternetBankingFundTransferServiceApplicationTests.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 39,
+      "orig_chunk_index": 95,
+      "component": "CustomFeignClientConfiguration",
+      "chunk_type": "class",
+      "component_type": "config",
+      "service": "internet-banking-fund-transfer-service",
+      "path": "internet-banking-fund-transfer-service/src/main/java/com/javatodev/finance/configuration/CustomFeignClientConfiguration.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 40,
+      "orig_chunk_index": 97,
+      "component": "AuditConfig",
+      "chunk_type": "class",
+      "component_type": "config",
+      "service": "internet-banking-fund-transfer-service",
+      "path": "internet-banking-fund-transfer-service/src/main/java/com/javatodev/finance/configuration/audit/AuditConfig.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 41,
+      "orig_chunk_index": 99,
+      "component": "AppAuthUserFilter",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-fund-transfer-service",
+      "path": "internet-banking-fund-transfer-service/src/main/java/com/javatodev/finance/configuration/filter/AppAuthUserFilter.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 42,
+      "orig_chunk_index": 100,
+      "component": "ApiRequestContext",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-fund-transfer-service",
+      "path": "internet-banking-fund-transfer-service/src/main/java/com/javatodev/finance/configuration/filter/ApiRequestContext.java",
+      "is_distractor": true
+    },
+    {
+      "pos": 43,
+      "orig_chunk_index": 101,
+      "component": "FundTransferController",
+      "chunk_type": "class",
+      "component_type": "controller",
+      "service": "internet-banking-fund-transfer-service",
+      "path": "internet-banking-fund-transfer-service/src/main/java/com/javatodev/finance/controller/FundTransferController.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 44,
+      "orig_chunk_index": 104,
+      "component": "AuditAware",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-fund-transfer-service",
+      "path": "internet-banking-fund-transfer-service/src/main/java/com/javatodev/finance/model/dto/AuditAware.java",
+      "is_distractor": true
+    },
+    {
+      "pos": 45,
+      "orig_chunk_index": 110,
+      "component": "FundTransferRepository",
+      "chunk_type": "interface",
+      "component_type": "interface",
+      "service": "internet-banking-fund-transfer-service",
+      "path": "internet-banking-fund-transfer-service/src/main/java/com/javatodev/finance/model/repository/FundTransferRepository.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 46,
+      "orig_chunk_index": 112,
+      "component": "BaseMapper",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-fund-transfer-service",
+      "path": "internet-banking-fund-transfer-service/src/main/java/com/javatodev/finance/model/mapper/BaseMapper.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 47,
+      "orig_chunk_index": 114,
+      "component": "FundTransferService",
+      "chunk_type": "class",
+      "component_type": "service",
+      "service": "internet-banking-fund-transfer-service",
+      "path": "internet-banking-fund-transfer-service/src/main/java/com/javatodev/finance/service/FundTransferService.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 48,
+      "orig_chunk_index": 115,
+      "component": "BankingCoreFeignClient",
+      "chunk_type": "interface",
+      "component_type": "interface",
+      "service": "internet-banking-fund-transfer-service",
+      "path": "internet-banking-fund-transfer-service/src/main/java/com/javatodev/finance/service/rest/client/BankingCoreFeignClient.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 49,
+      "orig_chunk_index": 116,
+      "component": "GlobalExceptionHandler",
+      "chunk_type": "class",
+      "component_type": "controller_advice",
+      "service": "internet-banking-fund-transfer-service",
+      "path": "internet-banking-fund-transfer-service/src/main/java/com/javatodev/finance/exception/GlobalExceptionHandler.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 50,
+      "orig_chunk_index": 117,
+      "component": "SimpleBankingGlobalException",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-fund-transfer-service",
+      "path": "internet-banking-fund-transfer-service/src/main/java/com/javatodev/finance/exception/SimpleBankingGlobalException.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 51,
+      "orig_chunk_index": 118,
+      "component": "ErrorResponse",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-fund-transfer-service",
+      "path": "internet-banking-fund-transfer-service/src/main/java/com/javatodev/finance/exception/ErrorResponse.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 52,
+      "orig_chunk_index": 120,
+      "component": "InternetBankingConfigServerApplicationTests",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-config-server",
+      "path": "internet-banking-config-server/src/test/java/com/javatodev/finance/InternetBankingConfigServerApplicationTests.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 53,
+      "orig_chunk_index": 125,
+      "component": "InternetBankingApiGatewayApplicationTests",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "internet-banking-api-gateway",
+      "path": "internet-banking-api-gateway/src/test/java/com/javatodev/finance/InternetBankingApiGatewayApplicationTests.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 54,
+      "orig_chunk_index": 131,
+      "component": "GatewayConfiguration",
+      "chunk_type": "class",
+      "component_type": "config",
+      "service": "internet-banking-api-gateway",
+      "path": "internet-banking-api-gateway/src/main/java/com/javatodev/finance/configuration/GatewayConfiguration.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 55,
+      "orig_chunk_index": 132,
+      "component": "SecurityConfiguration",
+      "chunk_type": "class",
+      "component_type": "config",
+      "service": "internet-banking-api-gateway",
+      "path": "internet-banking-api-gateway/src/main/java/com/javatodev/finance/configuration/security/SecurityConfiguration.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 56,
+      "orig_chunk_index": 144,
+      "component": "CoreBankingServiceApplicationTests",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/test/java/com/javatodev/finance/CoreBankingServiceApplicationTests.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 57,
+      "orig_chunk_index": 145,
+      "component": "AccountServiceTest",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/test/java/com/javatodev/finance/service/AccountServiceTest.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 58,
+      "orig_chunk_index": 146,
+      "component": "TransactionServiceTest",
+      "chunk_type": "method",
+      "component_type": "method",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/test/java/com/javatodev/finance/service/TransactionServiceTest.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 59,
+      "orig_chunk_index": 147,
+      "component": "TransactionServiceTest",
+      "chunk_type": "method",
+      "component_type": "method",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/test/java/com/javatodev/finance/service/TransactionServiceTest.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 60,
+      "orig_chunk_index": 148,
+      "component": "TransactionServiceTest",
+      "chunk_type": "method",
+      "component_type": "method",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/test/java/com/javatodev/finance/service/TransactionServiceTest.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 61,
+      "orig_chunk_index": 149,
+      "component": "TransactionServiceTest",
+      "chunk_type": "method",
+      "component_type": "method",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/test/java/com/javatodev/finance/service/TransactionServiceTest.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 62,
+      "orig_chunk_index": 150,
+      "component": "TransactionServiceTest",
+      "chunk_type": "method",
+      "component_type": "method",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/test/java/com/javatodev/finance/service/TransactionServiceTest.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 63,
+      "orig_chunk_index": 151,
+      "component": "TransactionServiceTest",
+      "chunk_type": "method",
+      "component_type": "method",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/test/java/com/javatodev/finance/service/TransactionServiceTest.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 64,
+      "orig_chunk_index": 152,
+      "component": "TransactionServiceTest",
+      "chunk_type": "method",
+      "component_type": "method",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/test/java/com/javatodev/finance/service/TransactionServiceTest.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 65,
+      "orig_chunk_index": 153,
+      "component": "TransactionServiceTest",
+      "chunk_type": "method",
+      "component_type": "method",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/test/java/com/javatodev/finance/service/TransactionServiceTest.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 66,
+      "orig_chunk_index": 154,
+      "component": "TransactionServiceTest",
+      "chunk_type": "method",
+      "component_type": "method",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/test/java/com/javatodev/finance/service/TransactionServiceTest.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 67,
+      "orig_chunk_index": 155,
+      "component": "TransactionServiceTest",
+      "chunk_type": "method",
+      "component_type": "method",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/test/java/com/javatodev/finance/service/TransactionServiceTest.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 68,
+      "orig_chunk_index": 156,
+      "component": "UserServiceTest",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/test/java/com/javatodev/finance/service/UserServiceTest.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 69,
+      "orig_chunk_index": 166,
+      "component": "AccountController",
+      "chunk_type": "class",
+      "component_type": "controller",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/controller/AccountController.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 70,
+      "orig_chunk_index": 169,
+      "component": "AccountStatus",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/model/AccountStatus.java",
+      "is_distractor": true
+    },
+    {
+      "pos": 71,
+      "orig_chunk_index": 170,
+      "component": "AccountType",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/model/AccountType.java",
+      "is_distractor": true
+    },
+    {
+      "pos": 72,
+      "orig_chunk_index": 171,
+      "component": "TransactionType",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/model/TransactionType.java",
+      "is_distractor": true
+    },
+    {
+      "pos": 73,
+      "orig_chunk_index": 172,
+      "component": "UtilityAccount",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/model/dto/UtilityAccount.java",
+      "is_distractor": true
+    },
+    {
+      "pos": 74,
+      "orig_chunk_index": 174,
+      "component": "BankAccount",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/model/dto/BankAccount.java",
+      "is_distractor": true
+    },
+    {
+      "pos": 75,
+      "orig_chunk_index": 175,
+      "component": "Transaction",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/model/dto/Transaction.java",
+      "is_distractor": true
+    },
+    {
+      "pos": 76,
+      "orig_chunk_index": 176,
+      "component": "UtilityPaymentResponse",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/model/dto/response/UtilityPaymentResponse.java",
+      "is_distractor": true
+    },
+    {
+      "pos": 77,
+      "orig_chunk_index": 177,
+      "component": "FundTransferResponse",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/model/dto/response/FundTransferResponse.java",
+      "is_distractor": true
+    },
+    {
+      "pos": 78,
+      "orig_chunk_index": 178,
+      "component": "UtilityPaymentRequest",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/model/dto/request/UtilityPaymentRequest.java",
+      "is_distractor": true
+    },
+    {
+      "pos": 79,
+      "orig_chunk_index": 179,
+      "component": "FundTransferRequest",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/model/dto/request/FundTransferRequest.java",
+      "is_distractor": true
+    },
+    {
+      "pos": 80,
+      "orig_chunk_index": 180,
+      "component": "BankAccountEntity",
+      "chunk_type": "class",
+      "component_type": "entity",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/model/entity/BankAccountEntity.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 81,
+      "orig_chunk_index": 185,
+      "component": "BankAccountMapper",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/model/mapper/BankAccountMapper.java",
+      "is_distractor": true
+    },
+    {
+      "pos": 82,
+      "orig_chunk_index": 186,
+      "component": "BaseMapper",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/model/mapper/BaseMapper.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 83,
+      "orig_chunk_index": 187,
+      "component": "UserMapper",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/model/mapper/UserMapper.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 84,
+      "orig_chunk_index": 188,
+      "component": "AccountService",
+      "chunk_type": "class",
+      "component_type": "service",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/service/AccountService.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 85,
+      "orig_chunk_index": 190,
+      "component": "TransactionService",
+      "chunk_type": "method",
+      "component_type": "service",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/service/TransactionService.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 86,
+      "orig_chunk_index": 191,
+      "component": "TransactionService",
+      "chunk_type": "method",
+      "component_type": "service",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/service/TransactionService.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 87,
+      "orig_chunk_index": 192,
+      "component": "TransactionService",
+      "chunk_type": "method",
+      "component_type": "service",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/service/TransactionService.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 88,
+      "orig_chunk_index": 193,
+      "component": "TransactionService",
+      "chunk_type": "method",
+      "component_type": "service",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/service/TransactionService.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 89,
+      "orig_chunk_index": 194,
+      "component": "GlobalErrorCode",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/exception/GlobalErrorCode.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 90,
+      "orig_chunk_index": 196,
+      "component": "GlobalExceptionHandler",
+      "chunk_type": "class",
+      "component_type": "controller_advice",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/exception/GlobalExceptionHandler.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 91,
+      "orig_chunk_index": 197,
+      "component": "InsufficientFundsException",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/exception/InsufficientFundsException.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 92,
+      "orig_chunk_index": 198,
+      "component": "SimpleBankingGlobalException",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/exception/SimpleBankingGlobalException.java",
+      "is_distractor": false
+    },
+    {
+      "pos": 93,
+      "orig_chunk_index": 199,
+      "component": "ErrorResponse",
+      "chunk_type": "class",
+      "component_type": "class",
+      "service": "core-banking-service",
+      "path": "core-banking-service/src/main/java/com/javatodev/finance/exception/ErrorResponse.java",
+      "is_distractor": false
+    }
+  ],
+  "queries": [
+    {
+      "id": "Q01",
+      "category": "T1_location",
+      "text": "Which class configures the routing rules of the API Gateway?",
+      "relevant_positions": [
+        54
+      ],
+      "relevant_components": [
+        "GatewayConfiguration"
+      ],
+      "n_relevant": 1
+    },
+    {
+      "id": "Q02",
+      "category": "T1_location",
+      "text": "Where is JWT security configured for the API Gateway?",
+      "relevant_positions": [
+        55
+      ],
+      "relevant_components": [
+        "SecurityConfiguration"
+      ],
+      "n_relevant": 1
+    },
+    {
+      "id": "Q03",
+      "category": "T1_location",
+      "text": "What class performs Keycloak user operations in the user service?",
+      "relevant_positions": [
+        30,
+        22
+      ],
+      "relevant_components": [
+        "KeycloakUserService",
+        "KeycloakManager"
+      ],
+      "n_relevant": 2
+    },
+    {
+      "id": "Q04",
+      "category": "T1_location",
+      "text": "Which repository persists fund transfer records?",
+      "relevant_positions": [
+        45
+      ],
+      "relevant_components": [
+        "FundTransferRepository"
+      ],
+      "n_relevant": 1
+    },
+    {
+      "id": "Q05",
+      "category": "T1_location",
+      "text": "What JPA entity maps bank accounts to the database in core-banking?",
+      "relevant_positions": [
+        80
+      ],
+      "relevant_components": [
+        "BankAccountEntity"
+      ],
+      "n_relevant": 1
+    },
+    {
+      "id": "Q06",
+      "category": "T1_location",
+      "text": "Which controller exposes the utility payment REST endpoints?",
+      "relevant_positions": [
+        5
+      ],
+      "relevant_components": [
+        "UtilityPaymentController"
+      ],
+      "n_relevant": 1
+    },
+    {
+      "id": "Q07",
+      "category": "T1_location",
+      "text": "What class decodes Feign client errors in the user service?",
+      "relevant_positions": [
+        16
+      ],
+      "relevant_components": [
+        "CustomFeignErrorDecoder"
+      ],
+      "n_relevant": 1
+    },
+    {
+      "id": "Q08",
+      "category": "T1_location",
+      "text": "Where is the InsufficientFundsException class defined?",
+      "relevant_positions": [
+        91,
+        50,
+        12,
+        36
+      ],
+      "relevant_components": [
+        "InsufficientFundsException",
+        "SimpleBankingGlobalException",
+        "SimpleBankingGlobalException",
+        "SimpleBankingGlobalException"
+      ],
+      "n_relevant": 4
+    },
+    {
+      "id": "Q09",
+      "category": "T1_location",
+      "text": "Which class maps a UserEntity to the User domain model in core-banking?",
+      "relevant_positions": [
+        83
+      ],
+      "relevant_components": [
+        "UserMapper"
+      ],
+      "n_relevant": 1
+    },
+    {
+      "id": "Q10",
+      "category": "T1_location",
+      "text": "What interface is the Feign client toward core-banking in the fund-transfer service?",
+      "relevant_positions": [
+        48
+      ],
+      "relevant_components": [
+        "BankingCoreFeignClient"
+      ],
+      "n_relevant": 1
+    },
+    {
+      "id": "Q11",
+      "category": "T2_behavior",
+      "text": "How is a fund transfer between two bank accounts executed end to end?",
+      "relevant_positions": [
+        43,
+        47,
+        48,
+        85,
+        87
+      ],
+      "relevant_components": [
+        "FundTransferController",
+        "FundTransferService",
+        "BankingCoreFeignClient",
+        "TransactionService",
+        "TransactionService"
+      ],
+      "n_relevant": 5
+    },
+    {
+      "id": "Q12",
+      "category": "T2_behavior",
+      "text": "How does the system verify that an account has enough balance before debiting it?",
+      "relevant_positions": [
+        87,
+        91,
+        85
+      ],
+      "relevant_components": [
+        "TransactionService",
+        "InsufficientFundsException",
+        "TransactionService"
+      ],
+      "n_relevant": 3
+    },
+    {
+      "id": "Q13",
+      "category": "T2_behavior",
+      "text": "How does user registration create the account both locally and in Keycloak?",
+      "relevant_positions": [
+        31,
+        30,
+        22,
+        24
+      ],
+      "relevant_components": [
+        "UserService",
+        "KeycloakUserService",
+        "KeycloakManager",
+        "UserController"
+      ],
+      "n_relevant": 4
+    },
+    {
+      "id": "Q14",
+      "category": "T2_behavior",
+      "text": "How is a utility bill payment processed and forwarded to core-banking?",
+      "relevant_positions": [
+        5,
+        9,
+        10,
+        86
+      ],
+      "relevant_components": [
+        "UtilityPaymentController",
+        "UtilityPaymentService",
+        "BankingCoreRestClient",
+        "TransactionService"
+      ],
+      "n_relevant": 4
+    },
+    {
+      "id": "Q15",
+      "category": "T2_behavior",
+      "text": "How is the authenticated user propagated across internal service calls?",
+      "relevant_positions": [
+        20,
+        21,
+        19,
+        41
+      ],
+      "relevant_components": [
+        "AppAuthUserFilter",
+        "ApiRequestContext",
+        "ApiRequestContextHolder",
+        "AppAuthUserFilter"
+      ],
+      "n_relevant": 4
+    },
+    {
+      "id": "Q16",
+      "category": "T2_behavior",
+      "text": "How does an internal fund transfer between two accounts of the same customer work?",
+      "relevant_positions": [
+        88,
+        87
+      ],
+      "relevant_components": [
+        "TransactionService",
+        "TransactionService"
+      ],
+      "n_relevant": 2
+    },
+    {
+      "id": "Q17",
+      "category": "T2_behavior",
+      "text": "How does the user service update an existing user's profile?",
+      "relevant_positions": [
+        32,
+        26,
+        24
+      ],
+      "relevant_components": [
+        "UserService",
+        "UserUpdateRequest",
+        "UserController"
+      ],
+      "n_relevant": 3
+    },
+    {
+      "id": "Q18",
+      "category": "T2_behavior",
+      "text": "How is the 'created by' / 'modified by' audit information captured automatically?",
+      "relevant_positions": [
+        27,
+        17,
+        18
+      ],
+      "relevant_components": [
+        "AuditAware",
+        "AuditorAwareConfig",
+        "AuditConfig"
+      ],
+      "n_relevant": 3
+    },
+    {
+      "id": "Q19",
+      "category": "T2_behavior",
+      "text": "How does core-banking create a new bank account for a customer?",
+      "relevant_positions": [
+        84,
+        69,
+        80
+      ],
+      "relevant_components": [
+        "AccountService",
+        "AccountController",
+        "BankAccountEntity"
+      ],
+      "n_relevant": 3
+    },
+    {
+      "id": "Q20",
+      "category": "T3_crosscutting",
+      "text": "How is global exception handling implemented across all microservices?",
+      "relevant_positions": [
+        11,
+        35,
+        49,
+        90
+      ],
+      "relevant_components": [
+        "GlobalExceptionHandler",
+        "GlobalExceptionHandler",
+        "GlobalExceptionHandler",
+        "GlobalExceptionHandler"
+      ],
+      "n_relevant": 4
+    },
+    {
+      "id": "Q21",
+      "category": "T3_crosscutting",
+      "text": "How is the authenticated-user servlet filter implemented in each microservice?",
+      "relevant_positions": [
+        20,
+        41,
+        4
+      ],
+      "relevant_components": [
+        "AppAuthUserFilter",
+        "AppAuthUserFilter",
+        "AppAuthUserFilter"
+      ],
+      "n_relevant": 3
+    },
+    {
+      "id": "Q22",
+      "category": "T3_crosscutting",
+      "text": "How do the internet-banking services communicate with the core-banking service?",
+      "relevant_positions": [
+        10,
+        33,
+        48,
+        15,
+        39,
+        2
+      ],
+      "relevant_components": [
+        "BankingCoreRestClient",
+        "BankingCoreRestClient",
+        "BankingCoreFeignClient",
+        "CustomFeignClientConfiguration",
+        "CustomFeignClientConfiguration",
+        "CustomFeignClientConfiguration"
+      ],
+      "n_relevant": 6
+    },
+    {
+      "id": "Q23",
+      "category": "T3_crosscutting",
+      "text": "What common base class do the entity mappers share across services?",
+      "relevant_positions": [
+        28,
+        46,
+        8,
+        82
+      ],
+      "relevant_components": [
+        "BaseMapper",
+        "BaseMapper",
+        "BaseMapper",
+        "BaseMapper"
+      ],
+      "n_relevant": 4
+    },
+    {
+      "id": "Q24",
+      "category": "T3_crosscutting",
+      "text": "How is the SimpleBankingGlobalException hierarchy structured across services?",
+      "relevant_positions": [
+        36,
+        50,
+        12,
+        92,
+        34,
+        89
+      ],
+      "relevant_components": [
+        "SimpleBankingGlobalException",
+        "SimpleBankingGlobalException",
+        "SimpleBankingGlobalException",
+        "SimpleBankingGlobalException",
+        "GlobalErrorCode",
+        "GlobalErrorCode"
+      ],
+      "n_relevant": 6
+    },
+    {
+      "id": "Q25",
+      "category": "T3_crosscutting",
+      "text": "How is the per-request API context managed in each internet-banking service?",
+      "relevant_positions": [
+        21,
+        19,
+        20
+      ],
+      "relevant_components": [
+        "ApiRequestContext",
+        "ApiRequestContextHolder",
+        "AppAuthUserFilter"
+      ],
+      "n_relevant": 3
+    },
+    {
+      "id": "Q26",
+      "category": "T3_crosscutting",
+      "text": "How are Feign clients configured across the internet-banking services?",
+      "relevant_positions": [
+        15,
+        39,
+        2,
+        16
+      ],
+      "relevant_components": [
+        "CustomFeignClientConfiguration",
+        "CustomFeignClientConfiguration",
+        "CustomFeignClientConfiguration",
+        "CustomFeignErrorDecoder"
+      ],
+      "n_relevant": 4
+    },
+    {
+      "id": "Q27",
+      "category": "T3_crosscutting",
+      "text": "How is JPA auditing configured consistently across the services?",
+      "relevant_positions": [
+        18,
+        40,
+        3,
+        17,
+        27
+      ],
+      "relevant_components": [
+        "AuditConfig",
+        "AuditConfig",
+        "AuditConfig",
+        "AuditorAwareConfig",
+        "AuditAware"
+      ],
+      "n_relevant": 5
+    },
+    {
+      "id": "Q28",
+      "category": "T3_crosscutting",
+      "text": "What error-response payload structure is returned to clients on failure?",
+      "relevant_positions": [
+        93,
+        37,
+        13,
+        51
+      ],
+      "relevant_components": [
+        "ErrorResponse",
+        "ErrorResponse",
+        "ErrorResponse",
+        "ErrorResponse"
+      ],
+      "n_relevant": 4
+    },
+    {
+      "id": "Q29",
+      "category": "T4_tests",
+      "text": "What unit tests cover the fund transfer business logic?",
+      "relevant_positions": [
+        59,
+        60,
+        61,
+        65,
+        66,
+        58
+      ],
+      "relevant_components": [
+        "TransactionServiceTest",
+        "TransactionServiceTest",
+        "TransactionServiceTest",
+        "TransactionServiceTest",
+        "TransactionServiceTest",
+        "TransactionServiceTest"
+      ],
+      "n_relevant": 6
+    },
+    {
+      "id": "Q30",
+      "category": "T4_tests",
+      "text": "What tests verify behavior when an account is not found during a transfer or payment?",
+      "relevant_positions": [
+        61,
+        66,
+        64
+      ],
+      "relevant_components": [
+        "TransactionServiceTest",
+        "TransactionServiceTest",
+        "TransactionServiceTest"
+      ],
+      "n_relevant": 3
+    },
+    {
+      "id": "Q31",
+      "category": "T4_tests",
+      "text": "What tests check the insufficient-funds scenario?",
+      "relevant_positions": [
+        60,
+        63,
+        67
+      ],
+      "relevant_components": [
+        "TransactionServiceTest",
+        "TransactionServiceTest",
+        "TransactionServiceTest"
+      ],
+      "n_relevant": 3
+    },
+    {
+      "id": "Q32",
+      "category": "T4_tests",
+      "text": "What tests cover utility payment processing?",
+      "relevant_positions": [
+        62,
+        64,
+        63
+      ],
+      "relevant_components": [
+        "TransactionServiceTest",
+        "TransactionServiceTest",
+        "TransactionServiceTest"
+      ],
+      "n_relevant": 3
+    },
+    {
+      "id": "Q33",
+      "category": "T4_tests",
+      "text": "Which test class covers the account service logic?",
+      "relevant_positions": [
+        57
+      ],
+      "relevant_components": [
+        "AccountServiceTest"
+      ],
+      "n_relevant": 1
+    },
+    {
+      "id": "Q34",
+      "category": "T4_tests",
+      "text": "Which test class covers the user service logic?",
+      "relevant_positions": [
+        68
+      ],
+      "relevant_components": [
+        "UserServiceTest"
+      ],
+      "n_relevant": 1
+    },
+    {
+      "id": "Q35",
+      "category": "T4_tests",
+      "text": "What is the fixture/mock setup for the transaction service tests?",
+      "relevant_positions": [
+        58
+      ],
+      "relevant_components": [
+        "TransactionServiceTest"
+      ],
+      "n_relevant": 1
+    },
+    {
+      "id": "Q36",
+      "category": "T4_tests",
+      "text": "What Spring Boot context-load smoke tests exist in the platform?",
+      "relevant_positions": [
+        56,
+        53,
+        52,
+        38,
+        14,
+        1,
+        0
+      ],
+      "relevant_components": [
+        "CoreBankingServiceApplicationTests",
+        "InternetBankingApiGatewayApplicationTests",
+        "InternetBankingConfigServerApplicationTests",
+        "InternetBankingFundTransferServiceApplicationTests",
+        "InternetBankingUserServiceApplicationTests",
+        "InternetBankingUtilityPaymentServiceApplicationTests",
+        "InternetBankingServiceRegistryApplicationTests"
+      ],
+      "n_relevant": 7
+    },
+    {
+      "id": "Q37",
+      "category": "T4_tests",
+      "text": "What tests validate a successful (internal) fund transfer?",
+      "relevant_positions": [
+        65,
+        59
+      ],
+      "relevant_components": [
+        "TransactionServiceTest",
+        "TransactionServiceTest"
+      ],
+      "n_relevant": 2
+    }
+  ]
+}

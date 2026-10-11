@@ -1,0 +1,1624 @@
+{
+  "meta": {
+    "n_corpus": 94,
+    "n_full_corpus": 200,
+    "n_java_corpus": 146,
+    "n_queries": 37,
+    "n_configurations": 12,
+    "queries_by_category": {
+      "T1 - Location": 10,
+      "T2 - Behavior": 9,
+      "T3 - Cross-cutting": 9,
+      "T4 - Tests": 9
+    },
+    "mean_relevant_by_category": {
+      "T1 - Location": 1.4,
+      "T2 - Behavior": 3.444,
+      "T3 - Cross-cutting": 4.333,
+      "T4 - Tests": 3.0
+    },
+    "ceilings": {
+      "mean_P@5": 0.572972972972973,
+      "mean_R@5": 0.9787644787644788,
+      "mean_R@10": 1.0,
+      "queries_with_more_than_5_relevant": 4
+    },
+    "n_distractors": 18,
+    "annotators": 1,
+    "cohen_kappa": null,
+    "primary_metric": "nDCG@5",
+    "hybrids": {
+      "hybrid-rrf": {
+        "dense": "gemini-retrieval",
+        "method": "rrf",
+        "k": 60
+      },
+      "hybrid-wsum": {
+        "dense": "gemini-retrieval",
+        "method": "wsum",
+        "alpha": 0.5
+      },
+      "hybrid-rrf-mpnet": {
+        "dense": "all-mpnet-base-v2",
+        "method": "rrf",
+        "k": 60
+      },
+      "hybrid-rrf-code": {
+        "dense": "jina-code-0.5b",
+        "method": "rrf",
+        "k": 60
+      }
+    }
+  },
+  "summary": [
+    {
+      "config": "MiniLM-L6",
+      "P@5": 0.3459,
+      "nP@5": 0.6811,
+      "R@5": 0.6689,
+      "R@10": 0.791,
+      "R-Prec": 0.6113,
+      "nDCG@5": 0.67,
+      "RR": 0.783,
+      "family": "dense"
+    },
+    {
+      "config": "MPNet",
+      "P@5": 0.4,
+      "nP@5": 0.7676,
+      "R@5": 0.7553,
+      "R@10": 0.873,
+      "R-Prec": 0.655,
+      "nDCG@5": 0.7464,
+      "RR": 0.8498,
+      "family": "dense"
+    },
+    {
+      "config": "Paraphrase-L3",
+      "P@5": 0.2973,
+      "nP@5": 0.6,
+      "R@5": 0.5869,
+      "R@10": 0.6946,
+      "R-Prec": 0.4669,
+      "nDCG@5": 0.5453,
+      "RR": 0.6238,
+      "family": "dense"
+    },
+    {
+      "config": "UniXcoder",
+      "P@5": 0.3351,
+      "nP@5": 0.5973,
+      "R@5": 0.5824,
+      "R@10": 0.7878,
+      "R-Prec": 0.4167,
+      "nDCG@5": 0.5526,
+      "RR": 0.6794,
+      "family": "dense"
+    },
+    {
+      "config": "JinaCode",
+      "P@5": 0.4757,
+      "nP@5": 0.8698,
+      "R@5": 0.8513,
+      "R@10": 0.945,
+      "R-Prec": 0.8095,
+      "nDCG@5": 0.8787,
+      "RR": 0.973,
+      "family": "dense"
+    },
+    {
+      "config": "Gemini-RETR",
+      "P@5": 0.4486,
+      "nP@5": 0.8495,
+      "R@5": 0.8346,
+      "R@10": 0.9374,
+      "R-Prec": 0.714,
+      "nDCG@5": 0.8258,
+      "RR": 0.9153,
+      "family": "dense"
+    },
+    {
+      "config": "Gemini-CODE",
+      "P@5": 0.4432,
+      "nP@5": 0.8189,
+      "R@5": 0.8031,
+      "R@10": 0.9419,
+      "R-Prec": 0.732,
+      "nDCG@5": 0.8228,
+      "RR": 0.9505,
+      "family": "dense"
+    },
+    {
+      "config": "BM25",
+      "P@5": 0.3622,
+      "nP@5": 0.6973,
+      "R@5": 0.6833,
+      "R@10": 0.8149,
+      "R-Prec": 0.5288,
+      "nDCG@5": 0.6467,
+      "RR": 0.7179,
+      "family": "lexical"
+    },
+    {
+      "config": "RRF(Gem+BM25)",
+      "P@5": 0.4595,
+      "nP@5": 0.8545,
+      "R@5": 0.8378,
+      "R@10": 0.9185,
+      "R-Prec": 0.6946,
+      "nDCG@5": 0.8159,
+      "RR": 0.9018,
+      "family": "hybrid"
+    },
+    {
+      "config": "WSum(Gem+BM25)",
+      "P@5": 0.4378,
+      "nP@5": 0.8279,
+      "R@5": 0.813,
+      "R@10": 0.914,
+      "R-Prec": 0.6608,
+      "nDCG@5": 0.7651,
+      "RR": 0.8153,
+      "family": "hybrid"
+    },
+    {
+      "config": "RRF(MPNet+BM25)",
+      "P@5": 0.4162,
+      "nP@5": 0.7671,
+      "R@5": 0.7531,
+      "R@10": 0.8991,
+      "R-Prec": 0.6707,
+      "nDCG@5": 0.7477,
+      "RR": 0.8484,
+      "family": "hybrid"
+    },
+    {
+      "config": "RRF(Jina+BM25)",
+      "P@5": 0.4541,
+      "nP@5": 0.8383,
+      "R@5": 0.8207,
+      "R@10": 0.9081,
+      "R-Prec": 0.7586,
+      "nDCG@5": 0.8213,
+      "RR": 0.9018,
+      "family": "hybrid"
+    }
+  ],
+  "bootstrap_ci": [
+    {
+      "config": "MiniLM-L6",
+      "family": "dense",
+      "metric": "R@5",
+      "mean": 0.6689,
+      "ci_lo": 0.5468,
+      "ci_hi": 0.7851
+    },
+    {
+      "config": "MiniLM-L6",
+      "family": "dense",
+      "metric": "R-Prec",
+      "mean": 0.6113,
+      "ci_lo": 0.4847,
+      "ci_hi": 0.7342
+    },
+    {
+      "config": "MiniLM-L6",
+      "family": "dense",
+      "metric": "nDCG@5",
+      "mean": 0.67,
+      "ci_lo": 0.5489,
+      "ci_hi": 0.7842
+    },
+    {
+      "config": "MiniLM-L6",
+      "family": "dense",
+      "metric": "RR",
+      "mean": 0.783,
+      "ci_lo": 0.6657,
+      "ci_hi": 0.8883
+    },
+    {
+      "config": "MPNet",
+      "family": "dense",
+      "metric": "R@5",
+      "mean": 0.7553,
+      "ci_lo": 0.6531,
+      "ci_hi": 0.8472
+    },
+    {
+      "config": "MPNet",
+      "family": "dense",
+      "metric": "R-Prec",
+      "mean": 0.655,
+      "ci_lo": 0.5419,
+      "ci_hi": 0.7676
+    },
+    {
+      "config": "MPNet",
+      "family": "dense",
+      "metric": "nDCG@5",
+      "mean": 0.7464,
+      "ci_lo": 0.651,
+      "ci_hi": 0.8344
+    },
+    {
+      "config": "MPNet",
+      "family": "dense",
+      "metric": "RR",
+      "mean": 0.8498,
+      "ci_lo": 0.7583,
+      "ci_hi": 0.9324
+    },
+    {
+      "config": "Paraphrase-L3",
+      "family": "dense",
+      "metric": "R@5",
+      "mean": 0.5869,
+      "ci_lo": 0.4562,
+      "ci_hi": 0.7157
+    },
+    {
+      "config": "Paraphrase-L3",
+      "family": "dense",
+      "metric": "R-Prec",
+      "mean": 0.4669,
+      "ci_lo": 0.3356,
+      "ci_hi": 0.6017
+    },
+    {
+      "config": "Paraphrase-L3",
+      "family": "dense",
+      "metric": "nDCG@5",
+      "mean": 0.5453,
+      "ci_lo": 0.417,
+      "ci_hi": 0.6705
+    },
+    {
+      "config": "Paraphrase-L3",
+      "family": "dense",
+      "metric": "RR",
+      "mean": 0.6238,
+      "ci_lo": 0.4968,
+      "ci_hi": 0.7476
+    },
+    {
+      "config": "UniXcoder",
+      "family": "dense",
+      "metric": "R@5",
+      "mean": 0.5824,
+      "ci_lo": 0.4517,
+      "ci_hi": 0.7063
+    },
+    {
+      "config": "UniXcoder",
+      "family": "dense",
+      "metric": "R-Prec",
+      "mean": 0.4167,
+      "ci_lo": 0.295,
+      "ci_hi": 0.5446
+    },
+    {
+      "config": "UniXcoder",
+      "family": "dense",
+      "metric": "nDCG@5",
+      "mean": 0.5526,
+      "ci_lo": 0.432,
+      "ci_hi": 0.6662
+    },
+    {
+      "config": "UniXcoder",
+      "family": "dense",
+      "metric": "RR",
+      "mean": 0.6794,
+      "ci_lo": 0.5555,
+      "ci_hi": 0.8009
+    },
+    {
+      "config": "JinaCode",
+      "family": "dense",
+      "metric": "R@5",
+      "mean": 0.8513,
+      "ci_lo": 0.7802,
+      "ci_hi": 0.9152
+    },
+    {
+      "config": "JinaCode",
+      "family": "dense",
+      "metric": "R-Prec",
+      "mean": 0.8095,
+      "ci_lo": 0.7333,
+      "ci_hi": 0.8802
+    },
+    {
+      "config": "JinaCode",
+      "family": "dense",
+      "metric": "nDCG@5",
+      "mean": 0.8787,
+      "ci_lo": 0.8193,
+      "ci_hi": 0.9327
+    },
+    {
+      "config": "JinaCode",
+      "family": "dense",
+      "metric": "RR",
+      "mean": 0.973,
+      "ci_lo": 0.9324,
+      "ci_hi": 1.0
+    },
+    {
+      "config": "Gemini-RETR",
+      "family": "dense",
+      "metric": "R@5",
+      "mean": 0.8346,
+      "ci_lo": 0.7455,
+      "ci_hi": 0.9144
+    },
+    {
+      "config": "Gemini-RETR",
+      "family": "dense",
+      "metric": "R-Prec",
+      "mean": 0.714,
+      "ci_lo": 0.6086,
+      "ci_hi": 0.8131
+    },
+    {
+      "config": "Gemini-RETR",
+      "family": "dense",
+      "metric": "nDCG@5",
+      "mean": 0.8258,
+      "ci_lo": 0.7457,
+      "ci_hi": 0.8973
+    },
+    {
+      "config": "Gemini-RETR",
+      "family": "dense",
+      "metric": "RR",
+      "mean": 0.9153,
+      "ci_lo": 0.8396,
+      "ci_hi": 0.982
+    },
+    {
+      "config": "Gemini-CODE",
+      "family": "dense",
+      "metric": "R@5",
+      "mean": 0.8031,
+      "ci_lo": 0.7107,
+      "ci_hi": 0.8887
+    },
+    {
+      "config": "Gemini-CODE",
+      "family": "dense",
+      "metric": "R-Prec",
+      "mean": 0.732,
+      "ci_lo": 0.6351,
+      "ci_hi": 0.8212
+    },
+    {
+      "config": "Gemini-CODE",
+      "family": "dense",
+      "metric": "nDCG@5",
+      "mean": 0.8228,
+      "ci_lo": 0.7444,
+      "ci_hi": 0.8944
+    },
+    {
+      "config": "Gemini-CODE",
+      "family": "dense",
+      "metric": "RR",
+      "mean": 0.9505,
+      "ci_lo": 0.8874,
+      "ci_hi": 1.0
+    },
+    {
+      "config": "BM25",
+      "family": "lexical",
+      "metric": "R@5",
+      "mean": 0.6833,
+      "ci_lo": 0.5571,
+      "ci_hi": 0.8041
+    },
+    {
+      "config": "BM25",
+      "family": "lexical",
+      "metric": "R-Prec",
+      "mean": 0.5288,
+      "ci_lo": 0.3865,
+      "ci_hi": 0.6707
+    },
+    {
+      "config": "BM25",
+      "family": "lexical",
+      "metric": "nDCG@5",
+      "mean": 0.6467,
+      "ci_lo": 0.5233,
+      "ci_hi": 0.7647
+    },
+    {
+      "config": "BM25",
+      "family": "lexical",
+      "metric": "RR",
+      "mean": 0.7179,
+      "ci_lo": 0.5941,
+      "ci_hi": 0.834
+    },
+    {
+      "config": "RRF(Gem+BM25)",
+      "family": "hybrid",
+      "metric": "R@5",
+      "mean": 0.8378,
+      "ci_lo": 0.7557,
+      "ci_hi": 0.9108
+    },
+    {
+      "config": "RRF(Gem+BM25)",
+      "family": "hybrid",
+      "metric": "R-Prec",
+      "mean": 0.6946,
+      "ci_lo": 0.5851,
+      "ci_hi": 0.7987
+    },
+    {
+      "config": "RRF(Gem+BM25)",
+      "family": "hybrid",
+      "metric": "nDCG@5",
+      "mean": 0.8159,
+      "ci_lo": 0.7397,
+      "ci_hi": 0.8871
+    },
+    {
+      "config": "RRF(Gem+BM25)",
+      "family": "hybrid",
+      "metric": "RR",
+      "mean": 0.9018,
+      "ci_lo": 0.8252,
+      "ci_hi": 0.9685
+    },
+    {
+      "config": "WSum(Gem+BM25)",
+      "family": "hybrid",
+      "metric": "R@5",
+      "mean": 0.813,
+      "ci_lo": 0.7341,
+      "ci_hi": 0.8886
+    },
+    {
+      "config": "WSum(Gem+BM25)",
+      "family": "hybrid",
+      "metric": "R-Prec",
+      "mean": 0.6608,
+      "ci_lo": 0.5509,
+      "ci_hi": 0.7671
+    },
+    {
+      "config": "WSum(Gem+BM25)",
+      "family": "hybrid",
+      "metric": "nDCG@5",
+      "mean": 0.7651,
+      "ci_lo": 0.6822,
+      "ci_hi": 0.8429
+    },
+    {
+      "config": "WSum(Gem+BM25)",
+      "family": "hybrid",
+      "metric": "RR",
+      "mean": 0.8153,
+      "ci_lo": 0.7252,
+      "ci_hi": 0.8986
+    },
+    {
+      "config": "RRF(MPNet+BM25)",
+      "family": "hybrid",
+      "metric": "R@5",
+      "mean": 0.7531,
+      "ci_lo": 0.6477,
+      "ci_hi": 0.8526
+    },
+    {
+      "config": "RRF(MPNet+BM25)",
+      "family": "hybrid",
+      "metric": "R-Prec",
+      "mean": 0.6707,
+      "ci_lo": 0.5563,
+      "ci_hi": 0.777
+    },
+    {
+      "config": "RRF(MPNet+BM25)",
+      "family": "hybrid",
+      "metric": "nDCG@5",
+      "mean": 0.7477,
+      "ci_lo": 0.6426,
+      "ci_hi": 0.8466
+    },
+    {
+      "config": "RRF(MPNet+BM25)",
+      "family": "hybrid",
+      "metric": "RR",
+      "mean": 0.8484,
+      "ci_lo": 0.745,
+      "ci_hi": 0.9378
+    },
+    {
+      "config": "RRF(Jina+BM25)",
+      "family": "hybrid",
+      "metric": "R@5",
+      "mean": 0.8207,
+      "ci_lo": 0.741,
+      "ci_hi": 0.8941
+    },
+    {
+      "config": "RRF(Jina+BM25)",
+      "family": "hybrid",
+      "metric": "R-Prec",
+      "mean": 0.7586,
+      "ci_lo": 0.6577,
+      "ci_hi": 0.8509
+    },
+    {
+      "config": "RRF(Jina+BM25)",
+      "family": "hybrid",
+      "metric": "nDCG@5",
+      "mean": 0.8213,
+      "ci_lo": 0.738,
+      "ci_hi": 0.8966
+    },
+    {
+      "config": "RRF(Jina+BM25)",
+      "family": "hybrid",
+      "metric": "RR",
+      "mean": 0.9018,
+      "ci_lo": 0.8234,
+      "ci_hi": 0.9685
+    }
+  ],
+  "omnibus": [
+    {
+      "group": "all 12 configurations",
+      "k": 12,
+      "chi2": 66.329,
+      "p": 6.05666196406098e-10,
+      "nDCG@5 spread": 0.333
+    },
+    {
+      "group": "7 dense models",
+      "k": 7,
+      "chi2": 44.077,
+      "p": 7.135923141625384e-08,
+      "nDCG@5 spread": 0.333
+    },
+    {
+      "group": "6 dense minus the paraphrase control",
+      "k": 6,
+      "chi2": 33.74,
+      "p": 2.682362346409298e-06,
+      "nDCG@5 spread": 0.326
+    },
+    {
+      "group": "4 general-purpose dense models",
+      "k": 4,
+      "chi2": 5.25,
+      "p": 0.1543799176701659,
+      "nDCG@5 spread": 0.156
+    }
+  ],
+  "pairwise_wilcoxon_holm": [
+    {
+      "A": "JinaCode",
+      "B": "Gemini-RETR",
+      "metric": "nDCG@5",
+      "delta": 0.0529,
+      "p": 0.24613691576742636,
+      "p_min": 1.52587890625e-05,
+      "n_nonzero": 17,
+      "p_holm": 0.9845476630697054,
+      "sig_holm": false
+    },
+    {
+      "A": "JinaCode",
+      "B": "Gemini-RETR",
+      "metric": "R-Prec",
+      "delta": 0.0955,
+      "p": 0.13066541967581174,
+      "p_min": 0.0001220703125,
+      "n_nonzero": 14,
+      "p_holm": 0.7839925180548705,
+      "sig_holm": false
+    },
+    {
+      "A": "JinaCode",
+      "B": "Gemini-RETR",
+      "metric": "RR",
+      "delta": 0.0577,
+      "p": 0.12064542533634502,
+      "p_min": 0.015625,
+      "n_nonzero": 7,
+      "p_holm": 0.6032271266817251,
+      "sig_holm": false
+    },
+    {
+      "A": "JinaCode",
+      "B": "UniXcoder",
+      "metric": "nDCG@5",
+      "delta": 0.3261,
+      "p": 3.1181340514838066e-05,
+      "p_min": 5.960464477539063e-08,
+      "n_nonzero": 25,
+      "p_holm": 0.0002806320646335426,
+      "sig_holm": true
+    },
+    {
+      "A": "JinaCode",
+      "B": "UniXcoder",
+      "metric": "R-Prec",
+      "delta": 0.3928,
+      "p": 5.6903996843232715e-05,
+      "p_min": 2.384185791015625e-07,
+      "n_nonzero": 23,
+      "p_holm": 0.0005121359715890945,
+      "sig_holm": true
+    },
+    {
+      "A": "JinaCode",
+      "B": "UniXcoder",
+      "metric": "RR",
+      "delta": 0.2935,
+      "p": 0.0006418578334382445,
+      "p_min": 6.103515625e-05,
+      "n_nonzero": 15,
+      "p_holm": 0.005776720500944201,
+      "sig_holm": true
+    },
+    {
+      "A": "Gemini-RETR",
+      "B": "Gemini-CODE",
+      "metric": "nDCG@5",
+      "delta": 0.003,
+      "p": 0.7220491421508173,
+      "p_min": 0.00390625,
+      "n_nonzero": 9,
+      "p_holm": 1.0,
+      "sig_holm": false
+    },
+    {
+      "A": "Gemini-RETR",
+      "B": "Gemini-CODE",
+      "metric": "R-Prec",
+      "delta": -0.018,
+      "p": 0.4652088184521418,
+      "p_min": 0.125,
+      "n_nonzero": 4,
+      "p_holm": 1.0,
+      "sig_holm": false
+    },
+    {
+      "A": "Gemini-RETR",
+      "B": "Gemini-CODE",
+      "metric": "RR",
+      "delta": -0.0351,
+      "p": 0.28504940740261275,
+      "p_min": 0.25,
+      "n_nonzero": 3,
+      "p_holm": 0.9702381996077678,
+      "sig_holm": false
+    },
+    {
+      "A": "Gemini-RETR",
+      "B": "MPNet",
+      "metric": "nDCG@5",
+      "delta": 0.0795,
+      "p": 0.10601806311812625,
+      "p_min": 9.5367431640625e-07,
+      "n_nonzero": 21,
+      "p_holm": 0.5300903155906312,
+      "sig_holm": false
+    },
+    {
+      "A": "Gemini-RETR",
+      "B": "MPNet",
+      "metric": "R-Prec",
+      "delta": 0.059,
+      "p": 0.26406536287442517,
+      "p_min": 1.52587890625e-05,
+      "n_nonzero": 17,
+      "p_holm": 1.0,
+      "sig_holm": false
+    },
+    {
+      "A": "Gemini-RETR",
+      "B": "MPNet",
+      "metric": "RR",
+      "delta": 0.0655,
+      "p": 0.24255954990194195,
+      "p_min": 0.0009765625,
+      "n_nonzero": 11,
+      "p_holm": 0.9702381996077678,
+      "sig_holm": false
+    },
+    {
+      "A": "Gemini-RETR",
+      "B": "BM25",
+      "metric": "nDCG@5",
+      "delta": 0.1791,
+      "p": 0.020399678834727552,
+      "p_min": 1.4901161193847656e-08,
+      "n_nonzero": 27,
+      "p_holm": 0.1223980730083653,
+      "sig_holm": false
+    },
+    {
+      "A": "Gemini-RETR",
+      "B": "BM25",
+      "metric": "R-Prec",
+      "delta": 0.1851,
+      "p": 0.03014091460028458,
+      "p_min": 1.1920928955078125e-07,
+      "n_nonzero": 24,
+      "p_holm": 0.21098640220199205,
+      "sig_holm": false
+    },
+    {
+      "A": "Gemini-RETR",
+      "B": "BM25",
+      "metric": "RR",
+      "delta": 0.1974,
+      "p": 0.014441910361771082,
+      "p_min": 7.62939453125e-06,
+      "n_nonzero": 18,
+      "p_holm": 0.10109337253239757,
+      "sig_holm": false
+    },
+    {
+      "A": "RRF(Gem+BM25)",
+      "B": "Gemini-RETR",
+      "metric": "nDCG@5",
+      "delta": -0.0099,
+      "p": 0.9870477950577223,
+      "p_min": 4.76837158203125e-07,
+      "n_nonzero": 22,
+      "p_holm": 1.0,
+      "sig_holm": false
+    },
+    {
+      "A": "RRF(Gem+BM25)",
+      "B": "Gemini-RETR",
+      "metric": "R-Prec",
+      "delta": -0.0194,
+      "p": 0.588292041979912,
+      "p_min": 6.103515625e-05,
+      "n_nonzero": 15,
+      "p_holm": 1.0,
+      "sig_holm": false
+    },
+    {
+      "A": "RRF(Gem+BM25)",
+      "B": "Gemini-RETR",
+      "metric": "RR",
+      "delta": -0.0135,
+      "p": 0.5913401534893602,
+      "p_min": 0.00390625,
+      "n_nonzero": 9,
+      "p_holm": 1.0,
+      "sig_holm": false
+    },
+    {
+      "A": "RRF(Jina+BM25)",
+      "B": "JinaCode",
+      "metric": "nDCG@5",
+      "delta": -0.0574,
+      "p": 0.016160884087378494,
+      "p_min": 3.0517578125e-05,
+      "n_nonzero": 16,
+      "p_holm": 0.11312618861164946,
+      "sig_holm": false
+    },
+    {
+      "A": "RRF(Jina+BM25)",
+      "B": "JinaCode",
+      "metric": "R-Prec",
+      "delta": -0.0509,
+      "p": 0.13690647995474456,
+      "p_min": 0.00390625,
+      "n_nonzero": 9,
+      "p_holm": 0.7839925180548705,
+      "sig_holm": false
+    },
+    {
+      "A": "RRF(Jina+BM25)",
+      "B": "JinaCode",
+      "metric": "RR",
+      "delta": -0.0712,
+      "p": 0.042168197097155954,
+      "p_min": 0.0625,
+      "n_nonzero": 5,
+      "p_holm": 0.2530091825829357,
+      "sig_holm": false
+    },
+    {
+      "A": "RRF(MPNet+BM25)",
+      "B": "MPNet",
+      "metric": "nDCG@5",
+      "delta": 0.0013,
+      "p": 0.5712430483673425,
+      "p_min": 7.62939453125e-06,
+      "n_nonzero": 18,
+      "p_holm": 1.0,
+      "sig_holm": false
+    },
+    {
+      "A": "RRF(MPNet+BM25)",
+      "B": "MPNet",
+      "metric": "R-Prec",
+      "delta": 0.0158,
+      "p": 0.7980880885473997,
+      "p_min": 0.001953125,
+      "n_nonzero": 10,
+      "p_holm": 1.0,
+      "sig_holm": false
+    },
+    {
+      "A": "RRF(MPNet+BM25)",
+      "B": "MPNet",
+      "metric": "RR",
+      "delta": -0.0014,
+      "p": 1.0,
+      "p_min": 0.00048828125,
+      "n_nonzero": 12,
+      "p_holm": 1.0,
+      "sig_holm": false
+    },
+    {
+      "A": "MPNet",
+      "B": "Paraphrase-L3",
+      "metric": "nDCG@5",
+      "delta": 0.2011,
+      "p": 0.002945699833843228,
+      "p_min": 5.960464477539063e-08,
+      "n_nonzero": 25,
+      "p_holm": 0.023565598670745824,
+      "sig_holm": true
+    },
+    {
+      "A": "MPNet",
+      "B": "Paraphrase-L3",
+      "metric": "R-Prec",
+      "delta": 0.1881,
+      "p": 0.010988148262450889,
+      "p_min": 9.5367431640625e-07,
+      "n_nonzero": 21,
+      "p_holm": 0.08790518609960711,
+      "sig_holm": false
+    },
+    {
+      "A": "MPNet",
+      "B": "Paraphrase-L3",
+      "metric": "RR",
+      "delta": 0.226,
+      "p": 0.004783851135692252,
+      "p_min": 3.814697265625e-06,
+      "n_nonzero": 19,
+      "p_holm": 0.03827080908553802,
+      "sig_holm": true
+    }
+  ],
+  "input_budget": {
+    "exposure": [
+      {
+        "config": "all-MiniLM-L6-v2",
+        "max_input": 256,
+        "max_chunk_tokens": 847.0,
+        "truncated": 36.0,
+        "truncated_%": 38.3,
+        "content_kept_%": 86.8
+      },
+      {
+        "config": "all-mpnet-base-v2",
+        "max_input": 384,
+        "max_chunk_tokens": 847.0,
+        "truncated": 21.0,
+        "truncated_%": 22.3,
+        "content_kept_%": 94.8
+      },
+      {
+        "config": "paraphrase-MiniLM-L3-v2",
+        "max_input": 128,
+        "max_chunk_tokens": 847.0,
+        "truncated": 68.0,
+        "truncated_%": 72.3,
+        "content_kept_%": 63.6
+      },
+      {
+        "config": "unixcoder-base",
+        "max_input": 1024,
+        "max_chunk_tokens": 628.0,
+        "truncated": 0.0,
+        "truncated_%": 0.0,
+        "content_kept_%": 100.0
+      },
+      {
+        "config": "jina-code-0.5b",
+        "max_input": 32768,
+        "max_chunk_tokens": 510.0,
+        "truncated": 0.0,
+        "truncated_%": 0.0,
+        "content_kept_%": 100.0
+      },
+      {
+        "config": "gemini-retrieval",
+        "max_input": 2048,
+        "max_chunk_tokens": NaN,
+        "truncated": NaN,
+        "truncated_%": NaN,
+        "content_kept_%": NaN
+      },
+      {
+        "config": "gemini-code",
+        "max_input": 2048,
+        "max_chunk_tokens": NaN,
+        "truncated": NaN,
+        "truncated_%": NaN,
+        "content_kept_%": NaN
+      }
+    ],
+    "cost_by_budget": [
+      {
+        "budget_tokens": 128,
+        "fragments_truncated_%": 57.4,
+        "nDCG@5": 0.8593,
+        "cost_vs_full": -0.0194
+      },
+      {
+        "budget_tokens": 256,
+        "fragments_truncated_%": 21.3,
+        "nDCG@5": 0.8742,
+        "cost_vs_full": -0.0045
+      },
+      {
+        "budget_tokens": 384,
+        "fragments_truncated_%": 4.3,
+        "nDCG@5": 0.8787,
+        "cost_vs_full": 0.0
+      },
+      {
+        "budget_tokens": "full",
+        "fragments_truncated_%": 0.0,
+        "nDCG@5": 0.8787,
+        "cost_vs_full": 0.0
+      }
+    ]
+  },
+  "category_by_config_nDCG5": [
+    {
+      "config": "MiniLM-L6",
+      "T1 - Location": 0.839,
+      "T2 - Behavior": 0.411,
+      "T3 - Cross-cutting": 0.748,
+      "T4 - Tests": 0.663
+    },
+    {
+      "config": "MPNet",
+      "T1 - Location": 0.857,
+      "T2 - Behavior": 0.581,
+      "T3 - Cross-cutting": 0.762,
+      "T4 - Tests": 0.774
+    },
+    {
+      "config": "Paraphrase-L3",
+      "T1 - Location": 0.841,
+      "T2 - Behavior": 0.357,
+      "T3 - Cross-cutting": 0.613,
+      "T4 - Tests": 0.337
+    },
+    {
+      "config": "UniXcoder",
+      "T1 - Location": 0.52,
+      "T2 - Behavior": 0.536,
+      "T3 - Cross-cutting": 0.642,
+      "T4 - Tests": 0.515
+    },
+    {
+      "config": "JinaCode",
+      "T1 - Location": 0.948,
+      "T2 - Behavior": 0.684,
+      "T3 - Cross-cutting": 0.927,
+      "T4 - Tests": 0.949
+    },
+    {
+      "config": "Gemini-RETR",
+      "T1 - Location": 0.844,
+      "T2 - Behavior": 0.738,
+      "T3 - Cross-cutting": 0.744,
+      "T4 - Tests": 0.975
+    },
+    {
+      "config": "Gemini-CODE",
+      "T1 - Location": 0.794,
+      "T2 - Behavior": 0.698,
+      "T3 - Cross-cutting": 0.838,
+      "T4 - Tests": 0.963
+    },
+    {
+      "config": "BM25",
+      "T1 - Location": 0.752,
+      "T2 - Behavior": 0.4,
+      "T3 - Cross-cutting": 0.718,
+      "T4 - Tests": 0.704
+    },
+    {
+      "config": "RRF(Gem+BM25)",
+      "T1 - Location": 0.841,
+      "T2 - Behavior": 0.675,
+      "T3 - Cross-cutting": 0.825,
+      "T4 - Tests": 0.92
+    },
+    {
+      "config": "WSum(Gem+BM25)",
+      "T1 - Location": 0.82,
+      "T2 - Behavior": 0.605,
+      "T3 - Cross-cutting": 0.778,
+      "T4 - Tests": 0.851
+    },
+    {
+      "config": "RRF(MPNet+BM25)",
+      "T1 - Location": 0.819,
+      "T2 - Behavior": 0.568,
+      "T3 - Cross-cutting": 0.786,
+      "T4 - Tests": 0.81
+    },
+    {
+      "config": "RRF(Jina+BM25)",
+      "T1 - Location": 0.893,
+      "T2 - Behavior": 0.586,
+      "T3 - Cross-cutting": 0.881,
+      "T4 - Tests": 0.918
+    }
+  ],
+  "mixed_effects_lrt": [
+    {
+      "effect": "configuration | category",
+      "df": 11,
+      "chi2": 92.16700799783484,
+      "p": 6.2637964813742466e-15
+    },
+    {
+      "effect": "category | configuration",
+      "df": 3,
+      "chi2": 8.710895462908866,
+      "p": 0.03339219125272259
+    },
+    {
+      "effect": "relevance-set size | configuration",
+      "df": 1,
+      "chi2": 2.6441495813160145,
+      "p": 0.10393176065150943
+    },
+    {
+      "effect": "category | configuration + |rel|",
+      "df": 3,
+      "chi2": 7.88058047768709,
+      "p": 0.048545309519613514
+    },
+    {
+      "effect": "|rel| | configuration + category",
+      "df": 1,
+      "chi2": 1.8138345960942388,
+      "p": 0.1780489178064141
+    },
+    {
+      "effect": "configuration x category interaction",
+      "df": 33,
+      "chi2": 55.92103112555424,
+      "p": 0.007616338669684464
+    }
+  ],
+  "permutation_tests": [
+    {
+      "factor": "category (between queries)",
+      "observed range": 0.2441,
+      "null mean": 0.1442,
+      "null sd": 0.0592,
+      "z": 1.69,
+      "p": 0.05805
+    },
+    {
+      "factor": "configuration (within query)",
+      "observed range": 0.3334,
+      "null mean": 0.131,
+      "null sd": 0.0311,
+      "z": 6.52,
+      "p": 0.0
+    }
+  ],
+  "category_wilcoxon_dense_vs_bm25": [
+    {
+      "category": "T1 - Location",
+      "n": 10,
+      "metric": "nDCG@5",
+      "dense": 0.948,
+      "bm25": 0.752,
+      "delta": 0.196,
+      "p": 0.125,
+      "p_min": 0.0625,
+      "n_nonzero": 5,
+      "p_holm": 0.25
+    },
+    {
+      "category": "T1 - Location",
+      "n": 10,
+      "metric": "R-Prec",
+      "dense": 0.9,
+      "bm25": 0.625,
+      "delta": 0.275,
+      "p": 0.1875,
+      "p_min": 0.0625,
+      "n_nonzero": 5,
+      "p_holm": 0.375
+    },
+    {
+      "category": "T2 - Behavior",
+      "n": 9,
+      "metric": "nDCG@5",
+      "dense": 0.684,
+      "bm25": 0.4,
+      "delta": 0.284,
+      "p": 0.0625,
+      "p_min": 0.03125,
+      "n_nonzero": 6,
+      "p_holm": 0.1875
+    },
+    {
+      "category": "T2 - Behavior",
+      "n": 9,
+      "metric": "R-Prec",
+      "dense": 0.581,
+      "bm25": 0.304,
+      "delta": 0.278,
+      "p": 0.0625,
+      "p_min": 0.0625,
+      "n_nonzero": 5,
+      "p_holm": 0.25
+    },
+    {
+      "category": "T3 - Cross-cutting",
+      "n": 9,
+      "metric": "nDCG@5",
+      "dense": 0.927,
+      "bm25": 0.718,
+      "delta": 0.208,
+      "p": 0.1875,
+      "p_min": 0.0625,
+      "n_nonzero": 5,
+      "p_holm": 0.25
+    },
+    {
+      "category": "T3 - Cross-cutting",
+      "n": 9,
+      "metric": "R-Prec",
+      "dense": 0.839,
+      "bm25": 0.694,
+      "delta": 0.144,
+      "p": 0.375,
+      "p_min": 0.125,
+      "n_nonzero": 4,
+      "p_holm": 0.375
+    },
+    {
+      "category": "T4 - Tests",
+      "n": 9,
+      "metric": "nDCG@5",
+      "dense": 0.949,
+      "bm25": 0.704,
+      "delta": 0.245,
+      "p": 0.046875,
+      "p_min": 0.015625,
+      "n_nonzero": 7,
+      "p_holm": 0.1875
+    },
+    {
+      "category": "T4 - Tests",
+      "n": 9,
+      "metric": "R-Prec",
+      "dense": 0.907,
+      "bm25": 0.481,
+      "delta": 0.426,
+      "p": 0.0625,
+      "p_min": 0.015625,
+      "n_nonzero": 7,
+      "p_holm": 0.25
+    }
+  ],
+  "embedding_space": {
+    "structural_discrimination": [
+      {
+        "model": "MiniLM-L6",
+        "median cross_service": 0.629,
+        "raw range same_file->cross": 0.256,
+        "sd over all pairs": 0.095,
+        "range / sd (scale-free)": 2.71,
+        "overlap near/far (60 bins)": 0.262,
+        "ROC-AUC structural": 0.674
+      },
+      {
+        "model": "MPNet",
+        "median cross_service": 0.716,
+        "raw range same_file->cross": 0.208,
+        "sd over all pairs": 0.081,
+        "range / sd (scale-free)": 2.56,
+        "overlap near/far (60 bins)": 0.263,
+        "ROC-AUC structural": 0.704
+      },
+      {
+        "model": "Paraphrase-L3",
+        "median cross_service": 0.722,
+        "raw range same_file->cross": 0.168,
+        "sd over all pairs": 0.07,
+        "range / sd (scale-free)": 2.4,
+        "overlap near/far (60 bins)": 0.358,
+        "ROC-AUC structural": 0.71
+      },
+      {
+        "model": "Gemini-RETR",
+        "median cross_service": 0.773,
+        "raw range same_file->cross": 0.112,
+        "sd over all pairs": 0.047,
+        "range / sd (scale-free)": 2.37,
+        "overlap near/far (60 bins)": 0.312,
+        "ROC-AUC structural": 0.717
+      }
+    ],
+    "relevance_separability": [
+      {
+        "config": "MiniLM-L6",
+        "ROC-AUC relevance (per query, mean)": 0.946,
+        "ROC-AUC relevance (pooled, z within query)": 0.942,
+        "median z relevant": 2.33,
+        "median z irrelevant": -0.16,
+        "overlap rel/irrel (60 bins)": 0.241
+      },
+      {
+        "config": "MPNet",
+        "ROC-AUC relevance (per query, mean)": 0.964,
+        "ROC-AUC relevance (pooled, z within query)": 0.95,
+        "median z relevant": 2.45,
+        "median z irrelevant": -0.2,
+        "overlap rel/irrel (60 bins)": 0.189
+      },
+      {
+        "config": "Paraphrase-L3",
+        "ROC-AUC relevance (per query, mean)": 0.884,
+        "ROC-AUC relevance (pooled, z within query)": 0.859,
+        "median z relevant": 1.68,
+        "median z irrelevant": -0.09,
+        "overlap rel/irrel (60 bins)": 0.435
+      },
+      {
+        "config": "UniXcoder",
+        "ROC-AUC relevance (per query, mean)": 0.931,
+        "ROC-AUC relevance (pooled, z within query)": 0.924,
+        "median z relevant": 2.06,
+        "median z irrelevant": -0.17,
+        "overlap rel/irrel (60 bins)": 0.262
+      },
+      {
+        "config": "JinaCode",
+        "ROC-AUC relevance (per query, mean)": 0.978,
+        "ROC-AUC relevance (pooled, z within query)": 0.963,
+        "median z relevant": 2.84,
+        "median z irrelevant": -0.25,
+        "overlap rel/irrel (60 bins)": 0.143
+      },
+      {
+        "config": "Gemini-RETR",
+        "ROC-AUC relevance (per query, mean)": 0.976,
+        "ROC-AUC relevance (pooled, z within query)": 0.961,
+        "median z relevant": 2.75,
+        "median z irrelevant": -0.24,
+        "overlap rel/irrel (60 bins)": 0.136
+      },
+      {
+        "config": "Gemini-CODE",
+        "ROC-AUC relevance (per query, mean)": 0.978,
+        "ROC-AUC relevance (pooled, z within query)": 0.969,
+        "median z relevant": 2.73,
+        "median z irrelevant": -0.22,
+        "overlap rel/irrel (60 bins)": 0.146
+      },
+      {
+        "config": "BM25",
+        "ROC-AUC relevance (per query, mean)": 0.943,
+        "ROC-AUC relevance (pooled, z within query)": 0.941,
+        "median z relevant": 2.69,
+        "median z irrelevant": -0.4,
+        "overlap rel/irrel (60 bins)": 0.25
+      }
+    ]
+  },
+  "sensitivity": {
+    "corpus_94_vs_146": [
+      {
+        "config": "MiniLM-L6",
+        "nDCG@5 (94)": 0.67,
+        "nDCG@5 (146)": 0.6444,
+        "R-Prec (94)": 0.6113,
+        "R-Prec (146)": 0.5707,
+        "delta nDCG@5": -0.0256,
+        "rank (94)": 9,
+        "rank (146)": 9
+      },
+      {
+        "config": "MPNet",
+        "nDCG@5 (94)": 0.7464,
+        "nDCG@5 (146)": 0.7076,
+        "R-Prec (94)": 0.655,
+        "R-Prec (146)": 0.6234,
+        "delta nDCG@5": -0.0388,
+        "rank (94)": 8,
+        "rank (146)": 7
+      },
+      {
+        "config": "Paraphrase-L3",
+        "nDCG@5 (94)": 0.5453,
+        "nDCG@5 (146)": 0.4754,
+        "R-Prec (94)": 0.4669,
+        "R-Prec (146)": 0.4051,
+        "delta nDCG@5": -0.0699,
+        "rank (94)": 12,
+        "rank (146)": 12
+      },
+      {
+        "config": "UniXcoder",
+        "nDCG@5 (94)": 0.5526,
+        "nDCG@5 (146)": 0.4784,
+        "R-Prec (94)": 0.4167,
+        "R-Prec (146)": 0.3707,
+        "delta nDCG@5": -0.0742,
+        "rank (94)": 11,
+        "rank (146)": 11
+      },
+      {
+        "config": "JinaCode",
+        "nDCG@5 (94)": 0.8787,
+        "nDCG@5 (146)": 0.8579,
+        "R-Prec (94)": 0.8095,
+        "R-Prec (146)": 0.7734,
+        "delta nDCG@5": -0.0208,
+        "rank (94)": 1,
+        "rank (146)": 1
+      },
+      {
+        "config": "Gemini-RETR",
+        "nDCG@5 (94)": 0.8258,
+        "nDCG@5 (146)": 0.7895,
+        "R-Prec (94)": 0.714,
+        "R-Prec (146)": 0.6838,
+        "delta nDCG@5": -0.0363,
+        "rank (94)": 2,
+        "rank (146)": 2
+      },
+      {
+        "config": "Gemini-CODE",
+        "nDCG@5 (94)": 0.8228,
+        "nDCG@5 (146)": 0.7881,
+        "R-Prec (94)": 0.732,
+        "R-Prec (146)": 0.7018,
+        "delta nDCG@5": -0.0347,
+        "rank (94)": 3,
+        "rank (146)": 3
+      },
+      {
+        "config": "BM25",
+        "nDCG@5 (94)": 0.6467,
+        "nDCG@5 (146)": 0.6346,
+        "R-Prec (94)": 0.5288,
+        "R-Prec (146)": 0.5144,
+        "delta nDCG@5": -0.0121,
+        "rank (94)": 10,
+        "rank (146)": 10
+      },
+      {
+        "config": "RRF(Gem+BM25)",
+        "nDCG@5 (94)": 0.8159,
+        "nDCG@5 (146)": 0.7685,
+        "R-Prec (94)": 0.6946,
+        "R-Prec (146)": 0.6149,
+        "delta nDCG@5": -0.0474,
+        "rank (94)": 5,
+        "rank (146)": 4
+      },
+      {
+        "config": "WSum(Gem+BM25)",
+        "nDCG@5 (94)": 0.7651,
+        "nDCG@5 (146)": 0.7421,
+        "R-Prec (94)": 0.6608,
+        "R-Prec (146)": 0.6306,
+        "delta nDCG@5": -0.023,
+        "rank (94)": 6,
+        "rank (146)": 6
+      },
+      {
+        "config": "RRF(MPNet+BM25)",
+        "nDCG@5 (94)": 0.7477,
+        "nDCG@5 (146)": 0.6972,
+        "R-Prec (94)": 0.6707,
+        "R-Prec (146)": 0.5932,
+        "delta nDCG@5": -0.0505,
+        "rank (94)": 7,
+        "rank (146)": 8
+      },
+      {
+        "config": "RRF(Jina+BM25)",
+        "nDCG@5 (94)": 0.8213,
+        "nDCG@5 (146)": 0.7597,
+        "R-Prec (94)": 0.7586,
+        "R-Prec (146)": 0.6428,
+        "delta nDCG@5": -0.0616,
+        "rank (94)": 4,
+        "rank (146)": 5
+      }
+    ],
+    "rrf_k_sweep": [
+      {
+        "fusion": "RRF(Gem+BM25)",
+        "dense side": "Gemini-RETR",
+        "k": 1,
+        "nDCG@5": 0.8144
+      },
+      {
+        "fusion": "RRF(Gem+BM25)",
+        "dense side": "Gemini-RETR",
+        "k": 5,
+        "nDCG@5": 0.825
+      },
+      {
+        "fusion": "RRF(Gem+BM25)",
+        "dense side": "Gemini-RETR",
+        "k": 10,
+        "nDCG@5": 0.8209
+      },
+      {
+        "fusion": "RRF(Gem+BM25)",
+        "dense side": "Gemini-RETR",
+        "k": 20,
+        "nDCG@5": 0.8231
+      },
+      {
+        "fusion": "RRF(Gem+BM25)",
+        "dense side": "Gemini-RETR",
+        "k": 40,
+        "nDCG@5": 0.8155
+      },
+      {
+        "fusion": "RRF(Gem+BM25)",
+        "dense side": "Gemini-RETR",
+        "k": 60,
+        "nDCG@5": 0.8159
+      },
+      {
+        "fusion": "RRF(Gem+BM25)",
+        "dense side": "Gemini-RETR",
+        "k": 100,
+        "nDCG@5": 0.8104
+      },
+      {
+        "fusion": "RRF(Gem+BM25)",
+        "dense side": "Gemini-RETR",
+        "k": 200,
+        "nDCG@5": 0.7981
+      },
+      {
+        "fusion": "RRF(MPNet+BM25)",
+        "dense side": "MPNet",
+        "k": 1,
+        "nDCG@5": 0.7558
+      },
+      {
+        "fusion": "RRF(MPNet+BM25)",
+        "dense side": "MPNet",
+        "k": 5,
+        "nDCG@5": 0.7674
+      },
+      {
+        "fusion": "RRF(MPNet+BM25)",
+        "dense side": "MPNet",
+        "k": 10,
+        "nDCG@5": 0.7749
+      },
+      {
+        "fusion": "RRF(MPNet+BM25)",
+        "dense side": "MPNet",
+        "k": 20,
+        "nDCG@5": 0.7536
+      },
+      {
+        "fusion": "RRF(MPNet+BM25)",
+        "dense side": "MPNet",
+        "k": 40,
+        "nDCG@5": 0.7497
+      },
+      {
+        "fusion": "RRF(MPNet+BM25)",
+        "dense side": "MPNet",
+        "k": 60,
+        "nDCG@5": 0.7477
+      },
+      {
+        "fusion": "RRF(MPNet+BM25)",
+        "dense side": "MPNet",
+        "k": 100,
+        "nDCG@5": 0.7436
+      },
+      {
+        "fusion": "RRF(MPNet+BM25)",
+        "dense side": "MPNet",
+        "k": 200,
+        "nDCG@5": 0.7536
+      },
+      {
+        "fusion": "RRF(Jina+BM25)",
+        "dense side": "JinaCode",
+        "k": 1,
+        "nDCG@5": 0.8173
+      },
+      {
+        "fusion": "RRF(Jina+BM25)",
+        "dense side": "JinaCode",
+        "k": 5,
+        "nDCG@5": 0.8281
+      },
+      {
+        "fusion": "RRF(Jina+BM25)",
+        "dense side": "JinaCode",
+        "k": 10,
+        "nDCG@5": 0.8268
+      },
+      {
+        "fusion": "RRF(Jina+BM25)",
+        "dense side": "JinaCode",
+        "k": 20,
+        "nDCG@5": 0.8275
+      },
+      {
+        "fusion": "RRF(Jina+BM25)",
+        "dense side": "JinaCode",
+        "k": 40,
+        "nDCG@5": 0.8295
+      },
+      {
+        "fusion": "RRF(Jina+BM25)",
+        "dense side": "JinaCode",
+        "k": 60,
+        "nDCG@5": 0.8213
+      },
+      {
+        "fusion": "RRF(Jina+BM25)",
+        "dense side": "JinaCode",
+        "k": 100,
+        "nDCG@5": 0.821
+      },
+      {
+        "fusion": "RRF(Jina+BM25)",
+        "dense side": "JinaCode",
+        "k": 200,
+        "nDCG@5": 0.8102
+      }
+    ],
+    "granularity": [
+      {
+        "granularity": "class",
+        "relevant_fragments": 56,
+        "median_best_rank": 2.0,
+        "share_reaching_top5": 0.911
+      },
+      {
+        "granularity": "method",
+        "relevant_fragments": 16,
+        "median_best_rank": 1.0,
+        "share_reaching_top5": 1.0
+      },
+      {
+        "granularity": "interface",
+        "relevant_fragments": 4,
+        "median_best_rank": 1.0,
+        "share_reaching_top5": 1.0
+      }
+    ]
+  }
+}

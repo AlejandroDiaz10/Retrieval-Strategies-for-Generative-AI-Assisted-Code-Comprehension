@@ -1,0 +1,90 @@
+{
+  "generated_at": "2026-10-10T21:22:52-06:00",
+  "study_repo": {
+    "url": "https://github.com/JavatoDev-com/internet-banking-concept-microservices",
+    "commit": "efb42d6a6656ec128552ba3f3f93c5ce96f039ff",
+    "commit_date": "2026-07-23",
+    "license": "MIT",
+    "snapshot_date": "2026-09-04",
+    "provenance": "source archive of branch `main`; commit = HEAD at snapshot_date"
+  },
+  "seed": 42,
+  "bootstrap_resamples": 10000,
+  "python": "3.12.1",
+  "platform": "Darwin arm64",
+  "libraries": {
+    "numpy": "2.4.2",
+    "pandas": "3.0.1",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "statsmodels": "0.15.0",
+    "sentence-transformers": "5.2.3",
+    "transformers": "5.2.0",
+    "torch": "2.10.0",
+    "rank-bm25": "0.2.2",
+    "snowballstemmer": "3.1.1",
+    "google-genai": "1.64.0",
+    "matplotlib": "3.10.8"
+  },
+  "managed_api": {
+    "model": "gemini-embedding-001",
+    "output_dimensionality": 768,
+    "task_types": [
+      "RETRIEVAL_DOCUMENT",
+      "RETRIEVAL_QUERY",
+      "CODE_RETRIEVAL_QUERY"
+    ],
+    "access_date": "2026-10-10"
+  },
+  "models": [
+    {
+      "config": "all-MiniLM-L6-v2",
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4",
+      "dim": 384,
+      "max_input_tokens": 256
+    },
+    {
+      "config": "all-mpnet-base-v2",
+      "model": "sentence-transformers/all-mpnet-base-v2",
+      "revision": "12e86a3c702f",
+      "dim": 768,
+      "max_input_tokens": 384
+    },
+    {
+      "config": "paraphrase-MiniLM-L3-v2",
+      "model": "sentence-transformers/paraphrase-MiniLM-L3-v2",
+      "revision": "4ca70771034a",
+      "dim": 384,
+      "max_input_tokens": 128
+    },
+    {
+      "config": "unixcoder-base",
+      "model": "microsoft/unixcoder-base",
+      "revision": "5604afdc964f",
+      "dim": 768,
+      "max_input_tokens": 1024
+    },
+    {
+      "config": "jina-code-0.5b",
+      "model": "jinaai/jina-code-embeddings-0.5b",
+      "revision": "4db235132daf",
+      "dim": 896,
+      "max_input_tokens": 32768
+    },
+    {
+      "config": "gemini-retrieval",
+      "model": "gemini-embedding-001",
+      "revision": "2026-10-10",
+      "dim": 768,
+      "max_input_tokens": 2048
+    },
+    {
+      "config": "gemini-code",
+      "model": "gemini-embedding-001",
+      "revision": "2026-10-10",
+      "dim": 768,
+      "max_input_tokens": 2048
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+config,max_input,max_chunk_tokens,truncated,truncated_%,content_kept_%
+all-MiniLM-L6-v2,256,847.0,36.0,38.3,86.8
+all-mpnet-base-v2,384,847.0,21.0,22.3,94.8
+paraphrase-MiniLM-L3-v2,128,847.0,68.0,72.3,63.6
+unixcoder-base,1024,628.0,0.0,0.0,100.0
+jina-code-0.5b,32768,510.0,0.0,0.0,100.0
+gemini-retrieval,2048,,,,
+gemini-code,2048,,,,

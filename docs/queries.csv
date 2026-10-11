@@ -1,0 +1,38 @@
+query,category,n_relevant,P@5_max,R@5_max,R@10_max,text
+Q01,T1 - Location,1,0.2,1.0,1.0,Which class configures the routing rules of the API Gateway?
+Q02,T1 - Location,1,0.2,1.0,1.0,Where is JWT security configured for the API Gateway?
+Q03,T1 - Location,2,0.4,1.0,1.0,What class performs Keycloak user operations in the user service?
+Q04,T1 - Location,1,0.2,1.0,1.0,Which repository persists fund transfer records?
+Q05,T1 - Location,1,0.2,1.0,1.0,What JPA entity maps bank accounts to the database in core-banking?
+Q06,T1 - Location,1,0.2,1.0,1.0,Which controller exposes the utility payment REST endpoints?
+Q07,T1 - Location,1,0.2,1.0,1.0,What class decodes Feign client errors in the user service?
+Q08,T1 - Location,4,0.8,1.0,1.0,Where is the InsufficientFundsException class defined?
+Q09,T1 - Location,1,0.2,1.0,1.0,Which class maps a UserEntity to the User domain model in core-banking?
+Q10,T1 - Location,1,0.2,1.0,1.0,What interface is the Feign client toward core-banking in the fund-transfer service?
+Q11,T2 - Behavior,5,1.0,1.0,1.0,How is a fund transfer between two bank accounts executed end to end?
+Q12,T2 - Behavior,3,0.6,1.0,1.0,How does the system verify that an account has enough balance before debiting it?
+Q13,T2 - Behavior,4,0.8,1.0,1.0,How does user registration create the account both locally and in Keycloak?
+Q14,T2 - Behavior,4,0.8,1.0,1.0,How is a utility bill payment processed and forwarded to core-banking?
+Q15,T2 - Behavior,4,0.8,1.0,1.0,How is the authenticated user propagated across internal service calls?
+Q16,T2 - Behavior,2,0.4,1.0,1.0,How does an internal fund transfer between two accounts of the same customer work?
+Q17,T2 - Behavior,3,0.6,1.0,1.0,How does the user service update an existing user's profile?
+Q18,T2 - Behavior,3,0.6,1.0,1.0,How is the 'created by' / 'modified by' audit information captured automatically?
+Q19,T2 - Behavior,3,0.6,1.0,1.0,How does core-banking create a new bank account for a customer?
+Q20,T3 - Cross-cutting,4,0.8,1.0,1.0,How is global exception handling implemented across all microservices?
+Q21,T3 - Cross-cutting,3,0.6,1.0,1.0,How is the authenticated-user servlet filter implemented in each microservice?
+Q22,T3 - Cross-cutting,6,1.0,0.8333333333333334,1.0,How do the internet-banking services communicate with the core-banking service?
+Q23,T3 - Cross-cutting,4,0.8,1.0,1.0,What common base class do the entity mappers share across services?
+Q24,T3 - Cross-cutting,6,1.0,0.8333333333333334,1.0,How is the SimpleBankingGlobalException hierarchy structured across services?
+Q25,T3 - Cross-cutting,3,0.6,1.0,1.0,How is the per-request API context managed in each internet-banking service?
+Q26,T3 - Cross-cutting,4,0.8,1.0,1.0,How are Feign clients configured across the internet-banking services?
+Q27,T3 - Cross-cutting,5,1.0,1.0,1.0,How is JPA auditing configured consistently across the services?
+Q28,T3 - Cross-cutting,4,0.8,1.0,1.0,What error-response payload structure is returned to clients on failure?
+Q29,T4 - Tests,6,1.0,0.8333333333333334,1.0,What unit tests cover the fund transfer business logic?
+Q30,T4 - Tests,3,0.6,1.0,1.0,What tests verify behavior when an account is not found during a transfer or payment?
+Q31,T4 - Tests,3,0.6,1.0,1.0,What tests check the insufficient-funds scenario?
+Q32,T4 - Tests,3,0.6,1.0,1.0,What tests cover utility payment processing?
+Q33,T4 - Tests,1,0.2,1.0,1.0,Which test class covers the account service logic?
+Q34,T4 - Tests,1,0.2,1.0,1.0,Which test class covers the user service logic?
+Q35,T4 - Tests,1,0.2,1.0,1.0,What is the fixture/mock setup for the transaction service tests?
+Q36,T4 - Tests,7,1.0,0.7142857142857143,1.0,What Spring Boot context-load smoke tests exist in the platform?
+Q37,T4 - Tests,2,0.4,1.0,1.0,What tests validate a successful (internal) fund transfer?
